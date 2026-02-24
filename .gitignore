@@ -1,0 +1,8 @@
+.DS_Store
+site/
+.venv/
+__pycache__/
+*.pyc
+.playwright-cli/
+.env
+*.log

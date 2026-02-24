@@ -1,0 +1,82 @@
+site_name: ComplianceOS
+site_url: https://silentspike.github.io/complianceos/
+site_description: "KI-gestuetzte On-Premise Compliance-Audit-Plattform"
+site_author: ComplianceOS
+repo_url: https://github.com/silentspike/complianceos
+repo_name: silentspike/complianceos
+
+theme:
+  name: material
+  language: de
+  font:
+    text: Outfit
+    code: IBM Plex Mono
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: custom
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang: de
+  - glightbox
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - abbr
+  - pymdownx.snippets
+  - pymdownx.keys
+  - tables
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Start:
+    - Willkommen: index.md
+    - schnellstart/installation.md
+    - schnellstart/erste-schritte.md
+    - schnellstart/docker.md
+    - schnellstart/datenschutz.md
+  - Bedienung:
+    - bedienung/dashboard.md
+    - bedienung/audits.md
+    - bedienung/findings.md
+    - bedienung/remediation.md
+    - bedienung/chat.md
+    - bedienung/dokumente.md
+    - bedienung/policies.md
+    - bedienung/reports.md
+    - bedienung/executive.md
+    - bedienung/einstellungen.md
+  - Referenz:
+    - referenz/standards.md
+    - referenz/glossar.md
+    - referenz/tastaturkuerzel.md
+    - referenz/faq.md

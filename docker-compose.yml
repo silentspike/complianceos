@@ -1,0 +1,19 @@
+services:
+  complianceos:
+    image: ghcr.io/obtfusi/complianceos:latest
+    ports:
+      - "8001:8001"
+    volumes:
+      - complianceos-data:/app/data
+    environment:
+      - COMPLIANCEOS_LOG_LEVEL=INFO
+      - COMPLIANCEOS_LANG=de
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+volumes:
+  complianceos-data:
