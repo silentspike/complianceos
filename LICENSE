@@ -1,0 +1,60 @@
+ComplianceOS - Proprietary Software License
+
+Copyright (c) 2026 ComplianceOS / silentspike. All rights reserved.
+
+TERMS AND CONDITIONS
+
+1. GRANT OF LICENSE
+   This software is licensed, not sold. You are granted a limited,
+   non-exclusive, non-transferable, revocable license to use this
+   software in binary/container form solely for your internal business
+   purposes, subject to the terms of this agreement.
+
+2. RESTRICTIONS
+   You may NOT:
+   a) Copy, modify, adapt, or create derivative works of the software
+   b) Reverse engineer, decompile, disassemble, or attempt to derive
+      the source code of the software
+   c) Redistribute, sublicense, rent, lease, or lend the software
+      to any third party
+   d) Remove or alter any proprietary notices, labels, or marks
+   e) Use the software to provide services to third parties (SaaS)
+      without a separate commercial agreement
+
+3. INTELLECTUAL PROPERTY
+   The software and all copies thereof are proprietary to ComplianceOS
+   and title thereto remains in ComplianceOS. All rights in the software
+   not specifically granted in this agreement are reserved to ComplianceOS.
+
+4. DATA PRIVACY
+   The software processes data locally on your infrastructure.
+   Optional AI features may transmit audit queries to third-party AI
+   providers (Claude by Anthropic). No data is collected by ComplianceOS.
+
+5. NO WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+6. LIMITATION OF LIABILITY
+   IN NO EVENT SHALL COMPLIANCEOS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+   OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+   ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+   OR OTHER DEALINGS IN THE SOFTWARE.
+
+7. DISCLAIMER
+   This software does not constitute professional legal, compliance,
+   or auditing advice. Results should be reviewed by qualified
+   professionals. ComplianceOS is not liable for decisions made based
+   on the software's output.
+
+8. TERMINATION
+   This license is effective until terminated. It will terminate
+   automatically if you fail to comply with any term of this agreement.
+   Upon termination, you must destroy all copies of the software.
+
+9. GOVERNING LAW
+   This agreement shall be governed by the laws of the Federal Republic
+   of Germany, without regard to its conflict of laws provisions.
+
+For commercial licensing inquiries: https://github.com/silentspike

@@ -1,0 +1,23 @@
+/* ComplianceOS - Obsidian Prism Theme for MkDocs */
+:root {
+  --cos-sapphire: #3b82f6;
+  --cos-amethyst: #8b5cf6;
+  --cos-ruby: #ef4444;
+  --cos-emerald: #10b981;
+  --cos-topaz: #f59e0b;
+  --cos-bg: #0f0f23;
+  --cos-surface: #1a1a2e;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--cos-sapphire);
+  --md-accent-fg-color: var(--cos-amethyst);
+}
+
+.md-header {
+  background-color: var(--cos-bg);
+}
+
+.md-tabs {
+  background-color: var(--cos-surface);
+}
