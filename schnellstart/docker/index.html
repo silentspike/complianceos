@@ -729,10 +729,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#health-check-schlaegt-fehl" class="md-nav__link">
+  <a href="#health-check-schlagt-fehl" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Health-Check schlaegt fehl
+        Health-Check schlägt fehl
       
     </span>
   </a>
@@ -1292,7 +1292,7 @@
   <span class="md-ellipsis">
     
   
-    Tastaturkuerzel
+    Tastaturkürzel
   
 
     
@@ -1535,10 +1535,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#health-check-schlaegt-fehl" class="md-nav__link">
+  <a href="#health-check-schlagt-fehl" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Health-Check schlaegt fehl
+        Health-Check schlägt fehl
       
     </span>
   </a>
@@ -1630,7 +1630,7 @@
 <tr>
 <td><code>COMPLIANCEOS_LANG</code></td>
 <td><code>de</code></td>
-<td>Oberflaechen-Sprache (<code>de</code> oder <code>en</code>)</td>
+<td>Oberflächen-Sprache (<code>de</code> oder <code>en</code>)</td>
 </tr>
 <tr>
 <td><code>DATABASE_URL</code></td>
@@ -1661,7 +1661,7 @@
 </table>
 <div class="admonition tip">
 <p class="admonition-title">Feature Flags</p>
-<p>Alle <code>ENABLE_*</code>-Variablen koennen auch ueber die <strong>Einstellungen</strong> im Browser gesteuert werden. Die Umgebungsvariablen setzen den Initialwert.</p>
+<p>Alle <code>ENABLE_*</code>-Variablen können auch über die <strong>Einstellungen</strong> im Browser gesteuert werden. Die Umgebungsvariablen setzen den Initialwert.</p>
 </div>
 <hr>
 <h2 id="daten-volume">Daten-Volume<a class="headerlink" href="#daten-volume" title="Permanent link">¶</a></h2>
@@ -1723,7 +1723,7 @@ docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"
 <span class="c1"># Nur Fehler anzeigen</span>
 docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"> </span>complianceos<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>ERROR
 </code></pre></div>
-<p>ComplianceOS nutzt strukturiertes JSON-Logging (structlog), optimiert fuer Log-Aggregation mit Loki, Elasticsearch oder aehnlichen Systemen.</p>
+<p>ComplianceOS nutzt strukturiertes JSON-Logging (structlog), optimiert für Log-Aggregation mit Loki, Elasticsearch oder ähnlichen Systemen.</p>
 <hr>
 <h2 id="ressourcen-begrenzen">Ressourcen begrenzen<a class="headerlink" href="#ressourcen-begrenzen" title="Permanent link">¶</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nt">services</span><span class="p">:</span>
@@ -1751,7 +1751,7 @@ docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"
 <td>RAM</td>
 <td>256 MB</td>
 <td>512 MB - 1 GB</td>
-<td>Abhaengig von Audit-Groesse und gleichzeitigen Nutzern</td>
+<td>Abhängig von Audit-Grösse und gleichzeitigen Nutzern</td>
 </tr>
 <tr>
 <td>CPU</td>
@@ -1763,7 +1763,7 @@ docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"
 <td>Disk</td>
 <td>100 MB</td>
 <td>1-5 GB</td>
-<td>Abhaengig von Dokumenten-Uploads und Audit-Historie</td>
+<td>Abhängig von Dokumenten-Uploads und Audit-Historie</td>
 </tr>
 </tbody>
 </table>
@@ -1800,8 +1800,8 @@ docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"
 <span class="p">}</span>
 </code></pre></div>
 <div class="admonition warning">
-<p class="admonition-title"><abbr title="Server-Sent Events -- Server-Push-Technologie fuer Echtzeit-Updates">SSE</abbr>-Unterstuetzung</p>
-<p>Wenn Sie einen Reverse Proxy verwenden, deaktivieren Sie <code>proxy_buffering</code> fuer die korrekte Funktion der Live-Fortschrittsanzeige bei Audits.</p>
+<p class="admonition-title"><abbr title="Server-Sent Events -- Server-Push-Technologie fuer Echtzeit-Updates">SSE</abbr>-Unterstützung</p>
+<p>Wenn Sie einen Reverse Proxy verwenden, deaktivieren Sie <code>proxy_buffering</code> für die korrekte Funktion der Live-Fortschrittsanzeige bei Audits.</p>
 </div>
 <hr>
 <h2 id="upgrade">Upgrade<a class="headerlink" href="#upgrade" title="Permanent link">¶</a></h2>
@@ -1810,7 +1810,7 @@ git<span class="w"> </span>pull
 docker<span class="w"> </span>compose<span class="w"> </span>build
 docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d
 </code></pre></div>
-<p>ComplianceOS fuehrt Datenbank-Migrationen automatisch beim Start durch. Bestehende Daten bleiben erhalten.</p>
+<p>ComplianceOS führt Datenbank-Migrationen automatisch beim Start durch. Bestehende Daten bleiben erhalten.</p>
 <hr>
 <h2 id="fehlerbehebung">Fehlerbehebung<a class="headerlink" href="#fehlerbehebung" title="Permanent link">¶</a></h2>
 <h3 id="container-startet-nicht">Container startet nicht<a class="headerlink" href="#container-startet-nicht" title="Permanent link">¶</a></h3>
@@ -1823,7 +1823,7 @@ docker<span class="w"> </span>compose<span class="w"> </span>ps
 <span class="c1"># In laufenden Container einsteigen</span>
 docker<span class="w"> </span>compose<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>complianceos<span class="w"> </span>bash
 </code></pre></div>
-<h3 id="health-check-schlaegt-fehl">Health-Check schlaegt fehl<a class="headerlink" href="#health-check-schlaegt-fehl" title="Permanent link">¶</a></h3>
+<h3 id="health-check-schlagt-fehl">Health-Check schlägt fehl<a class="headerlink" href="#health-check-schlagt-fehl" title="Permanent link">¶</a></h3>
 <div class="highlight"><pre><span></span><code><span class="c1"># Manueller Health-Check</span>
 docker<span class="w"> </span>compose<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>complianceos<span class="w"> </span>curl<span class="w"> </span>-f<span class="w"> </span>http://localhost:8001/api/health
 </code></pre></div>

@@ -567,10 +567,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#verbindung-pruefen" class="md-nav__link">
+  <a href="#verbindung-prufen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Verbindung pruefen
+        Verbindung prüfen
       
     </span>
   </a>
@@ -651,10 +651,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#code-ungueltig-oder-bereits-verwendet" class="md-nav__link">
+  <a href="#code-ungultig-oder-bereits-verwendet" class="md-nav__link">
     <span class="md-ellipsis">
       
-        "Code ungueltig oder bereits verwendet"
+        "Code ungültig oder bereits verwendet"
       
     </span>
   </a>
@@ -678,10 +678,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#naechste-schritte" class="md-nav__link">
+  <a href="#nachste-schritte" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Naechste Schritte
+        Nächste Schritte
       
     </span>
   </a>
@@ -1281,7 +1281,7 @@
   <span class="md-ellipsis">
     
   
-    Tastaturkuerzel
+    Tastaturkürzel
   
 
     
@@ -1418,10 +1418,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#verbindung-pruefen" class="md-nav__link">
+  <a href="#verbindung-prufen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Verbindung pruefen
+        Verbindung prüfen
       
     </span>
   </a>
@@ -1502,10 +1502,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#code-ungueltig-oder-bereits-verwendet" class="md-nav__link">
+  <a href="#code-ungultig-oder-bereits-verwendet" class="md-nav__link">
     <span class="md-ellipsis">
       
-        "Code ungueltig oder bereits verwendet"
+        "Code ungültig oder bereits verwendet"
       
     </span>
   </a>
@@ -1529,10 +1529,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#naechste-schritte" class="md-nav__link">
+  <a href="#nachste-schritte" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Naechste Schritte
+        Nächste Schritte
       
     </span>
   </a>
@@ -1560,14 +1560,14 @@
 
 
 <h1 id="claude-setup">Claude-Setup<a class="headerlink" href="#claude-setup" title="Permanent link">¶</a></h1>
-<p>ComplianceOS nutzt <strong>Claude AI</strong> fuer <abbr title="Kuenstliche Intelligenz -- Maschinelle Intelligenz und Lernverfahren">KI</abbr>-gestuetzte Funktionen: Chat-Beratung, Audit-Bewertungen und Policy-Generierung. Die Authentifizierung erfolgt per <abbr title="Open Authorization -- Offener Standard fuer delegierte Zugriffskontrolle">OAuth</abbr> direkt im Browser.</p>
+<p>ComplianceOS nutzt <strong>Claude AI</strong> für <abbr title="Kuenstliche Intelligenz -- Maschinelle Intelligenz und Lernverfahren">KI</abbr>-gestützte Funktionen: Chat-Beratung, Audit-Bewertungen und Policy-Generierung. Die Authentifizierung erfolgt per <abbr title="Open Authorization -- Offener Standard fuer delegierte Zugriffskontrolle">OAuth</abbr> direkt im Browser.</p>
 <div class="admonition info">
 <p class="admonition-title">Ohne Claude AI nutzbar</p>
 <p>Claude AI ist optional. Alle Kernfunktionen (Audits, Findings, Remediation, Reports, Matrix-Analytik) funktionieren auch ohne <abbr title="Kuenstliche Intelligenz -- Maschinelle Intelligenz und Lernverfahren">KI</abbr>-Anbindung.</p>
 </div>
 <hr>
 <h2 id="voraussetzung">Voraussetzung<a class="headerlink" href="#voraussetzung" title="Permanent link">¶</a></h2>
-<p>Sie benoetigen eine <strong>Claude Code Subscription</strong> von <a href="https://claude.ai">claude.ai</a>. ComplianceOS verwendet die gleiche Authentifizierung wie die Claude CLI.</p>
+<p>Sie benötigen eine <strong>Claude Code Subscription</strong> von <a href="https://claude.ai">claude.ai</a>. ComplianceOS verwendet die gleiche Authentifizierung wie die Claude CLI.</p>
 <hr>
 <h2 id="setup-seite">Setup-Seite<a class="headerlink" href="#setup-seite" title="Permanent link">¶</a></h2>
 <p>Beim ersten Start leitet ComplianceOS Sie automatisch auf die Setup-Seite weiter:</p>
@@ -1577,52 +1577,52 @@
 </figure>
 <hr>
 <h2 id="authentifizierung-starten">Authentifizierung starten<a class="headerlink" href="#authentifizierung-starten" title="Permanent link">¶</a></h2>
-<p>ComplianceOS unterstuetzt zwei <abbr title="Open Authorization -- Offener Standard fuer delegierte Zugriffskontrolle">OAuth</abbr>-Flows, abhaengig davon wie Sie auf die Anwendung zugreifen:</p>
+<p>ComplianceOS unterstützt zwei <abbr title="Open Authorization -- Offener Standard fuer delegierte Zugriffskontrolle">OAuth</abbr>-Flows, abhängig davon wie Sie auf die Anwendung zugreifen:</p>
 <h3 id="flow-1-lokaler-zugriff-localhost">Flow 1: Lokaler Zugriff (localhost)<a class="headerlink" href="#flow-1-lokaler-zugriff-localhost" title="Permanent link">¶</a></h3>
-<p>Wenn Sie ComplianceOS ueber <code>localhost</code> oder <code>127.0.0.1</code> oeffnen, wird der <strong>Auto-Redirect-Flow</strong> verwendet:</p>
+<p>Wenn Sie ComplianceOS über <code>localhost</code> oder <code>127.0.0.1</code> öffnen, wird der <strong>Auto-Redirect-Flow</strong> verwendet:</p>
 <ol>
 <li>Klicken Sie auf <strong>"Mit Claude verbinden"</strong></li>
 <li>Sie werden zu <code>claude.ai</code> weitergeleitet</li>
 <li>Melden Sie sich an und autorisieren Sie den Zugriff</li>
-<li>Der Browser leitet Sie automatisch zurueck zu ComplianceOS</li>
+<li>Der Browser leitet Sie automatisch zurück zu ComplianceOS</li>
 <li>Die Authentifizierung ist abgeschlossen</li>
 </ol>
 <div class="admonition tip">
 <p class="admonition-title">Empfohlener Flow</p>
-<p>Der Auto-Redirect ist der schnellste Weg. Er funktioniert nur bei lokalem Zugriff, da der <abbr title="Open Authorization -- Offener Standard fuer delegierte Zugriffskontrolle">OAuth</abbr>-Callback an <code>localhost</code> zurueckgeleitet wird.</p>
+<p>Der Auto-Redirect ist der schnellste Weg. Er funktioniert nur bei lokalem Zugriff, da der <abbr title="Open Authorization -- Offener Standard fuer delegierte Zugriffskontrolle">OAuth</abbr>-Callback an <code>localhost</code> zurückgeleitet wird.</p>
 </div>
 <h3 id="flow-2-remote-zugriff-server-ip">Flow 2: Remote-Zugriff (Server-IP)<a class="headerlink" href="#flow-2-remote-zugriff-server-ip" title="Permanent link">¶</a></h3>
-<p>Wenn Sie ComplianceOS ueber eine Server-IP oder einen Hostnamen erreichen (z.B. <code>http://10.0.0.42:8001</code>), wird der <strong>Manuelle-Code-Flow</strong> verwendet:</p>
+<p>Wenn Sie ComplianceOS über eine Server-IP oder einen Hostnamen erreichen (z.B. <code>http://10.0.0.42:8001</code>), wird der <strong>Manuelle-Code-Flow</strong> verwendet:</p>
 <ol>
 <li>Klicken Sie auf <strong>"Mit Claude verbinden"</strong></li>
-<li>Es oeffnet sich ein neues Fenster/Tab zu <code>claude.ai</code></li>
+<li>Es öffnet sich ein neues Fenster/Tab zu <code>claude.ai</code></li>
 <li>Melden Sie sich an und autorisieren Sie den Zugriff</li>
 <li>Claude zeigt Ihnen einen <strong>Autorisierungscode</strong> an</li>
 <li>Kopieren Sie diesen Code</li>
-<li>Fuegen Sie den Code in das Eingabefeld auf der ComplianceOS-Seite ein</li>
+<li>Fügen Sie den Code in das Eingabefeld auf der ComplianceOS-Seite ein</li>
 <li>Klicken Sie auf <strong>"Code absenden"</strong></li>
 </ol>
 <div class="admonition warning">
-<p class="admonition-title">Code-Gueltigkeit</p>
-<p>Der Autorisierungscode ist nur wenige Minuten gueltig. Wenn er ablaeuft, starten Sie den Vorgang erneut ueber <code>/setup</code>.</p>
+<p class="admonition-title">Code-Gültigkeit</p>
+<p>Der Autorisierungscode ist nur wenige Minuten gültig. Wenn er abläuft, starten Sie den Vorgang erneut über <code>/setup</code>.</p>
 </div>
 <hr>
-<h2 id="verbindung-pruefen">Verbindung pruefen<a class="headerlink" href="#verbindung-pruefen" title="Permanent link">¶</a></h2>
+<h2 id="verbindung-prufen">Verbindung prüfen<a class="headerlink" href="#verbindung-prufen" title="Permanent link">¶</a></h2>
 <p>Nach erfolgreicher Authentifizierung zeigt die Setup-Seite:</p>
 <ul>
-<li><strong>"Claude AI ist bereit"</strong> mit gruenem Haekchen</li>
+<li><strong>"Claude AI ist bereit"</strong> mit grünem Häkchen</li>
 <li>Der Button <strong>"Zum Dashboard"</strong> wird sichtbar</li>
 </ul>
 <p>In den <strong>Einstellungen</strong> sehen Sie den aktuellen Claude-Status unter dem Abschnitt "Claude AI":</p>
 <ul>
-<li><strong>Gruen</strong>: "Claude AI ist authentifiziert und einsatzbereit"</li>
+<li><strong>Grün</strong>: "Claude AI ist authentifiziert und einsatzbereit"</li>
 <li><strong>Gelb</strong>: "Claude CLI installiert, aber nicht authentifiziert"</li>
 <li><strong>Rot</strong>: "Claude CLI nicht gefunden"</li>
 </ul>
 <hr>
 <h2 id="technische-details">Technische Details<a class="headerlink" href="#technische-details" title="Permanent link">¶</a></h2>
 <h3 id="token-speicherung">Token-Speicherung<a class="headerlink" href="#token-speicherung" title="Permanent link">¶</a></h3>
-<p>Die <abbr title="Open Authorization -- Offener Standard fuer delegierte Zugriffskontrolle">OAuth</abbr>-Tokens werden unter <code>~/.claude/.credentials.json</code> gespeichert (gleicher Pfad wie die Claude CLI). Das Format ist kompatibel — wenn Sie bereits <code>claude auth login</code> ausgefuehrt haben, erkennt ComplianceOS die bestehende Authentifizierung.</p>
+<p>Die <abbr title="Open Authorization -- Offener Standard fuer delegierte Zugriffskontrolle">OAuth</abbr>-Tokens werden unter <code>~/.claude/.credentials.json</code> gespeichert (gleicher Pfad wie die Claude CLI). Das Format ist kompatibel — wenn Sie bereits <code>claude auth login</code> ausgeführt haben, erkennt ComplianceOS die bestehende Authentifizierung.</p>
 <h3 id="scopes">Scopes<a class="headerlink" href="#scopes" title="Permanent link">¶</a></h3>
 <p>ComplianceOS fordert folgende <abbr title="Open Authorization -- Offener Standard fuer delegierte Zugriffskontrolle">OAuth</abbr>-Scopes an:</p>
 <table>
@@ -1635,11 +1635,11 @@
 <tbody>
 <tr>
 <td><code>user:inference</code></td>
-<td><abbr title="Kuenstliche Intelligenz -- Maschinelle Intelligenz und Lernverfahren">KI</abbr>-Anfragen fuer Chat und Audit-Bewertungen</td>
+<td><abbr title="Kuenstliche Intelligenz -- Maschinelle Intelligenz und Lernverfahren">KI</abbr>-Anfragen für Chat und Audit-Bewertungen</td>
 </tr>
 <tr>
 <td><code>user:profile</code></td>
-<td>Benutzername fuer Anzeige</td>
+<td>Benutzername für Anzeige</td>
 </tr>
 <tr>
 <td><code>user:sessions:claude_code</code></td>
@@ -1648,21 +1648,21 @@
 </tbody>
 </table>
 <h3 id="token-erneuerung">Token-Erneuerung<a class="headerlink" href="#token-erneuerung" title="Permanent link">¶</a></h3>
-<p>Access-Tokens werden automatisch per Refresh-Token erneuert. Eine manuelle Neu-Authentifizierung ist nur bei Widerruf oder nach laengerer Inaktivitaet noetig.</p>
+<p>Access-Tokens werden automatisch per Refresh-Token erneuert. Eine manuelle Neu-Authentifizierung ist nur bei Widerruf oder nach längerer Inaktivität nötig.</p>
 <hr>
 <h2 id="fehlerbehebung">Fehlerbehebung<a class="headerlink" href="#fehlerbehebung" title="Permanent link">¶</a></h2>
 <h3 id="session-abgelaufen">"Session abgelaufen"<a class="headerlink" href="#session-abgelaufen" title="Permanent link">¶</a></h3>
-<p>Die <abbr title="Proof Key for Code Exchange -- OAuth-Erweiterung gegen Authorization-Code-Diebstahl">PKCE</abbr>-Session (<abbr title="Open Authorization -- Offener Standard fuer delegierte Zugriffskontrolle">OAuth</abbr>-Sicherheitsparameter) ist nach 15 Minuten abgelaufen. Starten Sie den Vorgang erneut ueber <code>/setup</code>.</p>
-<h3 id="code-ungueltig-oder-bereits-verwendet">"Code ungueltig oder bereits verwendet"<a class="headerlink" href="#code-ungueltig-oder-bereits-verwendet" title="Permanent link">¶</a></h3>
+<p>Die <abbr title="Proof Key for Code Exchange -- OAuth-Erweiterung gegen Authorization-Code-Diebstahl">PKCE</abbr>-Session (<abbr title="Open Authorization -- Offener Standard fuer delegierte Zugriffskontrolle">OAuth</abbr>-Sicherheitsparameter) ist nach 15 Minuten abgelaufen. Starten Sie den Vorgang erneut über <code>/setup</code>.</p>
+<h3 id="code-ungultig-oder-bereits-verwendet">"Code ungültig oder bereits verwendet"<a class="headerlink" href="#code-ungultig-oder-bereits-verwendet" title="Permanent link">¶</a></h3>
 <p>Der Autorisierungscode kann nur einmal verwendet werden. Starten Sie den Vorgang erneut.</p>
 <h3 id="claude-cli-vs-complianceos-auth">Claude CLI vs. ComplianceOS Auth<a class="headerlink" href="#claude-cli-vs-complianceos-auth" title="Permanent link">¶</a></h3>
-<p>Wenn Sie die Claude CLI (<code>claude auth login</code>) bereits nutzen, muessen Sie sich nicht erneut authentifizieren — ComplianceOS liest die bestehenden Credentials aus <code>~/.claude/.credentials.json</code>.</p>
+<p>Wenn Sie die Claude CLI (<code>claude auth login</code>) bereits nutzen, müssen Sie sich nicht erneut authentifizieren — ComplianceOS liest die bestehenden Credentials aus <code>~/.claude/.credentials.json</code>.</p>
 <hr>
-<h2 id="naechste-schritte">Naechste Schritte<a class="headerlink" href="#naechste-schritte" title="Permanent link">¶</a></h2>
+<h2 id="nachste-schritte">Nächste Schritte<a class="headerlink" href="#nachste-schritte" title="Permanent link">¶</a></h2>
 <p>Nach der Authentifizierung:</p>
 <ol>
-<li><a href="../erste-schritte/">Erste Schritte</a> — Projekt anlegen und ersten Audit durchfuehren</li>
-<li><a href="../../bedienung/chat/">Chat</a> — <abbr title="Kuenstliche Intelligenz -- Maschinelle Intelligenz und Lernverfahren">KI</abbr>-gestuetzte Compliance-Beratung nutzen</li>
+<li><a href="../erste-schritte/">Erste Schritte</a> — Projekt anlegen und ersten Audit durchführen</li>
+<li><a href="../../bedienung/chat/">Chat</a> — <abbr title="Kuenstliche Intelligenz -- Maschinelle Intelligenz und Lernverfahren">KI</abbr>-gestützte Compliance-Beratung nutzen</li>
 </ol>
 
 
