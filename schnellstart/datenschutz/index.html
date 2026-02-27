@@ -590,10 +590,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#datenfluss-uebersicht" class="md-nav__link">
+  <a href="#datenfluss-ubersicht" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Datenfluss-Uebersicht
+        Datenfluss-Übersicht
       
     </span>
   </a>
@@ -624,10 +624,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#bei-audit-durchfuehrung" class="md-nav__link">
+  <a href="#bei-audit-durchfuhrung" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Bei Audit-Durchfuehrung
+        Bei Audit-Durchführung
       
     </span>
   </a>
@@ -1231,7 +1231,7 @@
   <span class="md-ellipsis">
     
   
-    Tastaturkuerzel
+    Tastaturkürzel
   
 
     
@@ -1307,10 +1307,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#datenfluss-uebersicht" class="md-nav__link">
+  <a href="#datenfluss-ubersicht" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Datenfluss-Uebersicht
+        Datenfluss-Übersicht
       
     </span>
   </a>
@@ -1341,10 +1341,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#bei-audit-durchfuehrung" class="md-nav__link">
+  <a href="#bei-audit-durchfuhrung" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Bei Audit-Durchfuehrung
+        Bei Audit-Durchführung
       
     </span>
   </a>
@@ -1460,9 +1460,9 @@
 
 
 <h1 id="datenschutz">Datenschutz<a class="headerlink" href="#datenschutz" title="Permanent link">¶</a></h1>
-<p>ComplianceOS ist als <strong>On-Premise-Anwendung</strong> konzipiert. Ihre Daten bleiben auf Ihrer Infrastruktur. Diese Seite erklaert im Detail, welche Daten wo verarbeitet werden.</p>
+<p>ComplianceOS ist als <strong>On-Premise-Anwendung</strong> konzipiert. Ihre Daten bleiben auf Ihrer Infrastruktur. Diese Seite erklärt im Detail, welche Daten wo verarbeitet werden.</p>
 <hr>
-<h2 id="datenfluss-uebersicht">Datenfluss-Uebersicht<a class="headerlink" href="#datenfluss-uebersicht" title="Permanent link">¶</a></h2>
+<h2 id="datenfluss-ubersicht">Datenfluss-Übersicht<a class="headerlink" href="#datenfluss-ubersicht" title="Permanent link">¶</a></h2>
 <pre class="mermaid"><code>flowchart LR
     subgraph Lokal["Ihre Infrastruktur"]
         direction TB
@@ -1483,13 +1483,13 @@
     style Lokal fill:#1a1a2e,stroke:#10b981,color:#e2e8f0</code></pre>
 <hr>
 <h2 id="was-bleibt-lokal">Was bleibt lokal?<a class="headerlink" href="#was-bleibt-lokal" title="Permanent link">¶</a></h2>
-<p>Folgende Daten verlassen Ihr System <strong>unter keinen Umstaenden</strong>:</p>
+<p>Folgende Daten verlassen Ihr System <strong>unter keinen Umständen</strong>:</p>
 <table>
 <thead>
 <tr>
 <th>Daten</th>
 <th>Speicherort</th>
-<th>Verschluesselung</th>
+<th>Verschlüsselung</th>
 </tr>
 </thead>
 <tbody>
@@ -1514,7 +1514,7 @@
 <td>Dateisystem-Ebene</td>
 </tr>
 <tr>
-<td>Chat-Verlaeufe</td>
+<td>Chat-Verläufe</td>
 <td>In der Datenbank (<code>chat_session</code>, <code>chat_message</code>)</td>
 <td>Dateisystem-Ebene</td>
 </tr>
@@ -1536,13 +1536,13 @@
 </tbody>
 </table>
 <div class="admonition tip">
-<p class="admonition-title">Verschluesselung</p>
-<p>ComplianceOS verschluesselt Daten nicht auf Anwendungsebene. Fuer Verschluesselung at Rest nutzen Sie LUKS (Linux), FileVault (macOS) oder BitLocker (Windows) auf Dateisystem-Ebene.</p>
+<p class="admonition-title">Verschlüsselung</p>
+<p>ComplianceOS verschlüsselt Daten nicht auf Anwendungsebene. Für Verschlüsselung at Rest nutzen Sie LUKS (Linux), FileVault (macOS) oder BitLocker (Windows) auf Dateisystem-Ebene.</p>
 </div>
 <hr>
 <h2 id="was-wird-an-claude-ai-gesendet">Was wird an Claude AI gesendet?<a class="headerlink" href="#was-wird-an-claude-ai-gesendet" title="Permanent link">¶</a></h2>
 <p>Wenn die <abbr title="Kuenstliche Intelligenz -- Maschinelle Intelligenz und Lernverfahren">KI</abbr>-Integration aktiv ist, werden folgende Daten an die Claude <abbr title="Application Programming Interface -- Programmierschnittstelle">API</abbr> (Anthropic, <code>api.anthropic.com</code>) gesendet:</p>
-<h3 id="bei-audit-durchfuehrung">Bei Audit-Durchfuehrung<a class="headerlink" href="#bei-audit-durchfuehrung" title="Permanent link">¶</a></h3>
+<h3 id="bei-audit-durchfuhrung">Bei Audit-Durchführung<a class="headerlink" href="#bei-audit-durchfuhrung" title="Permanent link">¶</a></h3>
 <table>
 <thead>
 <tr>
@@ -1555,12 +1555,12 @@
 <tr>
 <td>Control-Beschreibung</td>
 <td>"A.8.5: Sichere Authentifizierung"</td>
-<td><abbr title="Kuenstliche Intelligenz -- Maschinelle Intelligenz und Lernverfahren">KI</abbr>-Bewertung des Pruefpunkts</td>
+<td><abbr title="Kuenstliche Intelligenz -- Maschinelle Intelligenz und Lernverfahren">KI</abbr>-Bewertung des Prüfpunkts</td>
 </tr>
 <tr>
 <td>Gefundene Evidenz</td>
-<td>Dateinamen, Konfigurationsauszuege</td>
-<td>Kontext fuer Bewertung</td>
+<td>Dateinamen, Konfigurationsauszüge</td>
+<td>Kontext für Bewertung</td>
 </tr>
 <tr>
 <td>System-Prompt</td>
@@ -1601,7 +1601,7 @@
 <li>Hochgeladene Dokumente (bleiben lokal)</li>
 <li>Passwort-Richtlinien oder Credentials</li>
 <li>Personenbezogene Daten aus der Datenbank</li>
-<li>Vollstaendige Datenbank-Inhalte</li>
+<li>Vollständige Datenbank-Inhalte</li>
 <li><abbr title="Open Authorization -- Offener Standard fuer delegierte Zugriffskontrolle">OAuth</abbr>-Tokens oder <abbr title="Application Programming Interface -- Programmierschnittstelle">API</abbr>-Keys</li>
 </ul>
 <hr>
@@ -1612,7 +1612,7 @@
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENABLE_TEAMMATES=false</span>
 </code></pre></div>
 <h3 id="per-einstellungen">Per Einstellungen<a class="headerlink" href="#per-einstellungen" title="Permanent link">¶</a></h3>
-<p>Unter <strong>Einstellungen</strong> &gt; <strong>Feature Flags</strong> koennen Sie die <abbr title="Kuenstliche Intelligenz -- Maschinelle Intelligenz und Lernverfahren">KI</abbr>-Features granular steuern:</p>
+<p>Unter <strong>Einstellungen</strong> &gt; <strong>Feature Flags</strong> können Sie die <abbr title="Kuenstliche Intelligenz -- Maschinelle Intelligenz und Lernverfahren">KI</abbr>-Features granular steuern:</p>
 <table>
 <thead>
 <tr>
@@ -1627,7 +1627,7 @@
 </tr>
 <tr>
 <td><code>policy_gen</code></td>
-<td><abbr title="Kuenstliche Intelligenz -- Maschinelle Intelligenz und Lernverfahren">KI</abbr>-gestuetzte Policy-Generierung</td>
+<td><abbr title="Kuenstliche Intelligenz -- Maschinelle Intelligenz und Lernverfahren">KI</abbr>-gestützte Policy-Generierung</td>
 </tr>
 </tbody>
 </table>
@@ -1654,15 +1654,15 @@
 <hr>
 <h2 id="datenschutz-empfehlungen">Datenschutz-Empfehlungen<a class="headerlink" href="#datenschutz-empfehlungen" title="Permanent link">¶</a></h2>
 <div class="admonition danger">
-<p class="admonition-title">Fuer regulierte Umgebungen</p>
+<p class="admonition-title">Für regulierte Umgebungen</p>
 <p>Wenn Sie ComplianceOS in Umgebungen mit strengen Datenschutz-Anforderungen einsetzen (z.B. Gesundheitswesen, Finanzsektor), beachten Sie:</p>
 </div>
 <ol>
-<li><strong><abbr title="Kuenstliche Intelligenz -- Maschinelle Intelligenz und Lernverfahren">KI</abbr> deaktivieren</strong>: Setzen Sie <code>ENABLE_TEAMMATES=false</code> wenn keine Daten das Netzwerk verlassen duerfen</li>
-<li><strong>Festplattenverschluesselung</strong>: Aktivieren Sie LUKS/dm-crypt auf dem Host</li>
+<li><strong><abbr title="Kuenstliche Intelligenz -- Maschinelle Intelligenz und Lernverfahren">KI</abbr> deaktivieren</strong>: Setzen Sie <code>ENABLE_TEAMMATES=false</code> wenn keine Daten das Netzwerk verlassen dürfen</li>
+<li><strong>Festplattenverschlüsselung</strong>: Aktivieren Sie LUKS/dm-crypt auf dem Host</li>
 <li><strong>Netzwerk-Isolation</strong>: Binden Sie ComplianceOS nur an <code>127.0.0.1</code> oder ein internes Netz</li>
 <li><strong>Zugriffskontrolle</strong>: Nutzen Sie einen Reverse Proxy mit Authentifizierung (z.B. nginx + Basic Auth oder <abbr title="Single Sign-On -- Einmalanmeldung fuer mehrere Systeme">SSO</abbr>)</li>
-<li><strong>Backup-Verschluesselung</strong>: Verschluesseln Sie Backups der <code>data/</code>-Verzeichnisse</li>
+<li><strong>Backup-Verschlüsselung</strong>: Verschlüsseln Sie Backups der <code>data/</code>-Verzeichnisse</li>
 <li><strong>Log-Rotation</strong>: Konfigurieren Sie Log-Rotation um sensitive Informationen nicht unbegrenzt vorzuhalten</li>
 </ol>
 

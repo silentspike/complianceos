@@ -542,6 +542,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="1. Projekt anlegen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#was-ist-der-projekt-pfad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Was ist der Projekt-Pfad?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -606,10 +623,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-naechste-schritte" class="md-nav__link">
+  <a href="#5-nachste-schritte" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Naechste Schritte
+        5. Nächste Schritte
       
     </span>
   </a>
@@ -1181,7 +1198,7 @@
   <span class="md-ellipsis">
     
   
-    Tastaturkuerzel
+    Tastaturkürzel
   
 
     
@@ -1265,6 +1282,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="1. Projekt anlegen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#was-ist-der-projekt-pfad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Was ist der Projekt-Pfad?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1329,10 +1363,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-naechste-schritte" class="md-nav__link">
+  <a href="#5-nachste-schritte" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Naechste Schritte
+        5. Nächste Schritte
       
     </span>
   </a>
@@ -1360,34 +1394,52 @@
 
 
 <h1 id="erste-schritte">Erste Schritte<a class="headerlink" href="#erste-schritte" title="Permanent link">¶</a></h1>
-<p>Diese Anleitung fuehrt Sie in 5 Schritten vom leeren System zum ersten Audit-Ergebnis.</p>
+<p>Diese Anleitung führt Sie in 5 Schritten vom leeren System zum ersten Audit-Ergebnis.</p>
 <hr>
 <h2 id="1-projekt-anlegen">1. Projekt anlegen<a class="headerlink" href="#1-projekt-anlegen" title="Permanent link">¶</a></h2>
-<p>ComplianceOS arbeitet projektbezogen. Jedes Projekt repraesentiert eine Organisation, ein Team oder einen Audit-Scope.</p>
+<p>ComplianceOS arbeitet projektbezogen. Jedes Projekt repräsentiert eine Organisation, ein Team oder einen Audit-Scope.</p>
 <ol>
-<li>Oeffnen Sie <strong>Einstellungen</strong> in der Seitenleiste</li>
+<li>Öffnen Sie <strong>Einstellungen</strong> in der Seitenleiste</li>
 <li>Scrollen Sie zum Abschnitt <strong>Projekte</strong></li>
 <li>Geben Sie einen Projektnamen ein (z.B. "SecureTech Solutions GmbH")</li>
-<li>Geben Sie den Pfad zum zu pruefenden Projekt-Verzeichnis ein</li>
+<li>Geben Sie den <strong>Projekt-Pfad</strong> ein — das Verzeichnis auf dem Server, das ComplianceOS prüfen soll</li>
 <li>Klicken Sie auf <strong>Projekt erstellen</strong></li>
 </ol>
-<p>Das neue Projekt wird automatisch aktiv. In der Kopfzeile sehen Sie den Projektnamen als Dropdown — hier koennen Sie spaeter zwischen Projekten wechseln.</p>
+<p>Das neue Projekt wird automatisch aktiv. In der Kopfzeile sehen Sie den Projektnamen als Dropdown — hier können Sie später zwischen Projekten wechseln.</p>
+<h3 id="was-ist-der-projekt-pfad">Was ist der Projekt-Pfad?<a class="headerlink" href="#was-ist-der-projekt-pfad" title="Permanent link">¶</a></h3>
+<p>Der Projekt-Pfad zeigt auf das Verzeichnis, das Ihre <strong>Infrastruktur-Dateien</strong> enthält. ComplianceOS durchsucht dieses Verzeichnis automatisch nach Konfigurationen, Richtlinien und Sicherheitseinstellungen.</p>
+<p><strong>Ideal geeignete Inhalte:</strong></p>
+<ul>
+<li>Konfigurationsdateien (nginx.conf, docker-compose.yml, Terraform, Ansible)</li>
+<li>Sicherheitsrichtlinien als Dateien (Passwort-Policy, Backup-Plan, Notfallplan)</li>
+<li>Infrastruktur-Code (Dockerfiles, CI/CD-Pipelines, Helm-Charts)</li>
+<li>Dokumentation (Architektur-Dokumente, Betriebshandbücher)</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Docker-Benutzer</p>
+<p>Bei Docker-Installationen ist der Projekt-Pfad ein Pfad <strong>innerhalb</strong> des Containers. Mounten Sie Ihr Projektverzeichnis als Volume in der <code>docker-compose.yml</code>:
+</p><div class="highlight"><pre><span></span><code><span class="nt">volumes</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/pfad/auf/host:/app/mein-projekt</span>
+</code></pre></div>
+Dann verwenden Sie <code>/app/mein-projekt</code> als Projekt-Pfad.<p></p>
+</div>
+<p>Zusätzlich zum Projekt-Pfad können Sie unter <strong>Dokumente</strong> weitere Dateien hochladen (PDF, Word, Excel, Markdown, Text) — zum Beispiel Richtlinien oder Zertifikate die nicht im Projektverzeichnis liegen. Details: <a href="../../bedienung/audits/#was-wird-gepruft-quellen-und-evidenz">Audits &gt; Was wird geprüft?</a></p>
 <figure class="screenshot">
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../screenshots/dashboard/dashboard-medidata.png" data-desc-position="bottom"><img alt="Dashboard nach Projekterstellung" src="../../screenshots/dashboard/dashboard-medidata.png"></a></p>
-<figcaption>Dashboard eines neuen Projekts — noch keine Audits durchgefuehrt</figcaption>
+<figcaption>Dashboard eines neuen Projekts — noch keine Audits durchgeführt</figcaption>
 </figure>
 <div class="admonition tip">
 <p class="admonition-title">Mehrere Projekte</p>
-<p>Sie koennen beliebig viele Projekte anlegen. Jedes Projekt hat eigene Audit-Ergebnisse, Findings und Policies. Der Wechsel erfolgt ueber das Dropdown in der Kopfzeile.</p>
+<p>Sie können beliebig viele Projekte anlegen. Jedes Projekt hat eigene Audit-Ergebnisse, Findings und Policies. Der Wechsel erfolgt über das Dropdown in der Kopfzeile.</p>
 </div>
 <hr>
 <h2 id="2-ersten-audit-starten">2. Ersten Audit starten<a class="headerlink" href="#2-ersten-audit-starten" title="Permanent link">¶</a></h2>
 <ol>
 <li>Klicken Sie auf <strong>Audits</strong> in der Seitenleiste</li>
-<li>Der <strong>Projekt-Pfad</strong> ist bereits vorausgefuellt</li>
-<li>Waehlen Sie den <strong>Modus</strong>:</li>
-<li><strong>Vollstaendig</strong>: Prueft alle 135 Controls ueber alle 12 Domains</li>
-<li><strong>Domain</strong>: Prueft nur eine bestimmte Domain (z.B. CRYPTO, ACCESS)</li>
+<li>Der <strong>Projekt-Pfad</strong> ist bereits vorausgefüllt</li>
+<li>Wählen Sie den <strong>Modus</strong>:</li>
+<li><strong>Vollständig</strong>: Prüft alle 135 Controls über alle 12 Domains</li>
+<li><strong>Domain</strong>: Prüft nur eine bestimmte Domain (z.B. CRYPTO, ACCESS)</li>
 <li>Klicken Sie auf <strong>Audit starten</strong></li>
 </ol>
 <figure class="screenshot">
@@ -1397,7 +1449,7 @@
 <div class="admonition info">
 <p class="admonition-title">Audit-Dauer</p>
 <ul>
-<li><strong>Vollaudit</strong>: 1-5 Minuten (abhaengig von Systemkomplexitaet und <abbr title="Kuenstliche Intelligenz -- Maschinelle Intelligenz und Lernverfahren">KI</abbr>-Verfuegbarkeit)</li>
+<li><strong>Vollaudit</strong>: 1-5 Minuten (abhängig von Systemkomplexität und <abbr title="Kuenstliche Intelligenz -- Maschinelle Intelligenz und Lernverfahren">KI</abbr>-Verfügbarkeit)</li>
 <li><strong>Domain-Audit</strong>: Wenige Sekunden bis 1 Minute</li>
 <li>Der Fortschritt wird live auf der Seite angezeigt</li>
 </ul>
@@ -1422,13 +1474,13 @@
 <tbody>
 <tr>
 <td>80-100%</td>
-<td>Gruen</td>
+<td>Grün</td>
 <td>Guter Zustand, wenige Abweichungen</td>
 </tr>
 <tr>
 <td>60-79%</td>
 <td>Gelb</td>
-<td>Handlungsbedarf, relevante Luecken</td>
+<td>Handlungsbedarf, relevante Lücken</td>
 </tr>
 <tr>
 <td>40-59%</td>
@@ -1456,17 +1508,17 @@
 <tr>
 <td><strong>Major <abbr title="Non-Conformance -- Abweichung von einem Standard-Requirement">NC</abbr></strong></td>
 <td><span class="badge badge--major-nc">MAJOR <abbr title="Non-Conformance -- Abweichung von einem Standard-Requirement">NC</abbr></span></td>
-<td>Schwerwiegende Nichtkonformitaet — sofortige Massnahme erforderlich</td>
+<td>Schwerwiegende Nichtkonformität — sofortige Massnahme erforderlich</td>
 </tr>
 <tr>
 <td><strong>Minor <abbr title="Non-Conformance -- Abweichung von einem Standard-Requirement">NC</abbr></strong></td>
 <td><span class="badge badge--minor-nc">MINOR <abbr title="Non-Conformance -- Abweichung von einem Standard-Requirement">NC</abbr></span></td>
-<td>Geringfuegige Nichtkonformitaet — Massnahme innerhalb definierter Frist</td>
+<td>Geringfügige Nichtkonformität — Massnahme innerhalb definierter Frist</td>
 </tr>
 <tr>
 <td><strong>Observation</strong></td>
 <td><span class="badge badge--info">OBSERVATION</span></td>
-<td>Beobachtung — potentielles Risiko oder Verbesserungsmoeglichkeit</td>
+<td>Beobachtung — potentielles Risiko oder Verbesserungsmöglichkeit</td>
 </tr>
 <tr>
 <td><strong><abbr title="Opportunity for Improvement -- Verbesserungsvorschlag ohne Abweichung">OFI</abbr></strong></td>
@@ -1480,7 +1532,7 @@
 <ol>
 <li>Klicken Sie auf <strong>Findings</strong> in der Seitenleiste</li>
 <li>Nutzen Sie die Filter oben um nach Severity, Domain oder Status zu filtern</li>
-<li>Klicken Sie auf ein Finding fuer die Detailansicht</li>
+<li>Klicken Sie auf ein Finding für die Detailansicht</li>
 </ol>
 <figure class="screenshot">
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../screenshots/findings/finding-detail.png" data-desc-position="bottom"><img alt="Finding-Detail" src="../../screenshots/findings/finding-detail.png"></a></p>
@@ -1490,13 +1542,13 @@
 <ul>
 <li><strong>Beschreibung</strong>: Was wurde festgestellt</li>
 <li><strong>Empfehlung</strong>: Konkrete Handlungsempfehlung</li>
-<li><strong>Evidenz</strong>: Welche Dateien/Konfigurationen geprueft wurden</li>
-<li><strong>Reasoning Chain</strong>: Begruendungskette der <abbr title="Kuenstliche Intelligenz -- Maschinelle Intelligenz und Lernverfahren">KI</abbr>-Bewertung</li>
+<li><strong>Evidenz</strong>: Welche Dateien/Konfigurationen geprüft wurden</li>
+<li><strong>Reasoning Chain</strong>: Begründungskette der <abbr title="Kuenstliche Intelligenz -- Maschinelle Intelligenz und Lernverfahren">KI</abbr>-Bewertung</li>
 <li><strong>Status-Workflow</strong>: Offen → In Arbeit → Behoben → Akzeptiert</li>
 </ul>
-<p>Aendern Sie den Status ueber die Buttons im Remediation-Status-Bereich.</p>
+<p>Ändern Sie den Status über die Buttons im Remediation-Status-Bereich.</p>
 <hr>
-<h2 id="5-naechste-schritte">5. Naechste Schritte<a class="headerlink" href="#5-naechste-schritte" title="Permanent link">¶</a></h2>
+<h2 id="5-nachste-schritte">5. Nächste Schritte<a class="headerlink" href="#5-nachste-schritte" title="Permanent link">¶</a></h2>
 <p>Nach dem ersten Audit empfehlen sich folgende Aktionen:</p>
 <table>
 <thead>
@@ -1510,7 +1562,7 @@
 <tr>
 <td>Massnahmen planen</td>
 <td><a href="../../bedienung/remediation/">Remediation</a></td>
-<td>Kanban-Board fuer Massnahmen-Tracking</td>
+<td>Kanban-Board für Massnahmen-Tracking</td>
 </tr>
 <tr>
 <td>Richtlinie generieren</td>
@@ -1525,7 +1577,7 @@
 <tr>
 <td>Report erstellen</td>
 <td><a href="../../bedienung/reports/">Reports</a></td>
-<td>Audit-Bericht fuer Management oder Auditoren</td>
+<td>Audit-Bericht für Management oder Auditoren</td>
 </tr>
 <tr>
 <td>Risiken bewerten</td>
@@ -1535,13 +1587,13 @@
 <tr>
 <td>Audit planen</td>
 <td><a href="../../bedienung/einstellungen/">Einstellungen</a></td>
-<td>Automatische Audit-Zeitplaene einrichten</td>
+<td>Automatische Audit-Zeitpläne einrichten</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition tip">
-<p class="admonition-title">Regelmaessige Audits</p>
-<p>Fuehren Sie regelmaessig Audits durch (z.B. monatlich). ComplianceOS erkennt automatisch <strong>Drift</strong> — Veraenderungen gegenueber dem vorherigen Audit. So sehen Sie sofort ob sich Ihr Compliance-Zustand verbessert oder verschlechtert hat.</p>
+<p class="admonition-title">Regelmässige Audits</p>
+<p>Führen Sie regelmässig Audits durch (z.B. monatlich). ComplianceOS erkennt automatisch <strong>Drift</strong> — Veränderungen gegenüber dem vorherigen Audit. So sehen Sie sofort ob sich Ihr Compliance-Zustand verbessert oder verschlechtert hat.</p>
 </div>
 
 
