@@ -1,6 +1,6 @@
-# Tastaturkuerzel
+# Tastaturkürzel
 
-ComplianceOS unterstuetzt Tastaturkuerzel fuer schnelle Navigation und effizientes Arbeiten. Alle Kuerzel funktionieren global auf jeder Seite.
+ComplianceOS unterstützt Tastaturkürzel für schnelle Navigation und effizientes Arbeiten. Alle Kürzel funktionieren global auf jeder Seite.
 
 ---
 
@@ -8,9 +8,9 @@ ComplianceOS unterstuetzt Tastaturkuerzel fuer schnelle Navigation und effizient
 
 Springen Sie direkt zu den Hauptbereichen:
 
-| Kuerzel | Aktion |
+| Kürzel | Aktion |
 |---------|--------|
-| ++ctrl+k++ | Command Palette oeffnen |
+| ++ctrl+k++ | Command Palette öffnen |
 | ++ctrl+1++ | Dashboard |
 | ++ctrl+2++ | Chat |
 | ++ctrl+3++ | Audits |
@@ -26,14 +26,14 @@ Springen Sie direkt zu den Hauptbereichen:
 
 Die **Command Palette** (++ctrl+k++) ist der schnellste Weg zu jeder Funktion in ComplianceOS:
 
-1. Druecken Sie ++ctrl+k++ auf einer beliebigen Seite
-2. Es oeffnet sich ein Suchfeld in der Mitte des Bildschirms
+1. Drücken Sie ++ctrl+k++ auf einer beliebigen Seite
+2. Es öffnet sich ein Suchfeld in der Mitte des Bildschirms
 3. Beginnen Sie zu tippen — die Ergebnisse filtern sich in Echtzeit
 4. Navigieren Sie mit ++arrow-up++ und ++arrow-down++ durch die Ergebnisse
-5. Druecken Sie ++enter++ um die ausgewaehlte Aktion auszufuehren
-6. Druecken Sie ++escape++ zum Schliessen
+5. Drücken Sie ++enter++ um die ausgewählte Aktion auszuführen
+6. Drücken Sie ++escape++ zum Schliessen
 
-### Verfuegbare Befehle
+### Verfügbare Befehle
 
 Die Command Palette bietet Zugriff auf:
 
@@ -42,25 +42,25 @@ Die Command Palette bietet Zugriff auf:
 | **Navigation** | Dashboard, Chat, Audits, Findings, Dokumente, Policies, Reports, Einstellungen |
 | **Aktionen** | Neuen Audit starten, Policy generieren, Report erstellen |
 | **Suche** | Findings suchen, Dokumente finden |
-| **Einstellungen** | Sprache aendern, Projekt wechseln |
+| **Einstellungen** | Sprache ändern, Projekt wechseln |
 
 !!! tip "Schnellzugriff"
-    Tippen Sie nur die ersten Buchstaben — "au" reicht fuer "Audits", "fi" fuer "Findings". Die Fuzzy-Suche findet auch bei Tippfehlern das richtige Ergebnis.
+    Tippen Sie nur die ersten Buchstaben — "au" reicht für "Audits", "fi" für "Findings". Die Fuzzy-Suche findet auch bei Tippfehlern das richtige Ergebnis.
 
 ---
 
 ## Chat
 
-| Kuerzel | Aktion |
+| Kürzel | Aktion |
 |---------|--------|
 | ++enter++ | Nachricht senden |
-| ++shift+enter++ | Zeilenumbruch einfuegen |
+| ++shift+enter++ | Zeilenumbruch einfügen |
 
 ---
 
 ## Allgemein
 
-| Kuerzel | Aktion |
+| Kürzel | Aktion |
 |---------|--------|
 | ++escape++ | Dialog oder Overlay schliessen |
 | ++tab++ | Zwischen Formularfeldern wechseln |
@@ -70,7 +70,7 @@ Die Command Palette bietet Zugriff auf:
 ## Tipps
 
 !!! tip "Command Palette merken"
-    Merken Sie sich ++ctrl+k++ — damit erreichen Sie alles in ComplianceOS mit maximal 3 Tastendruecken. Kein Klicken durch Menues noetig.
+    Merken Sie sich ++ctrl+k++ — damit erreichen Sie alles in ComplianceOS mit maximal 3 Tastendrücken. Kein Klicken durch Menüs nötig.
 
-!!! info "Browser-Kuerzel"
-    ComplianceOS nutzt ++ctrl++ als Modifikator. Falls ein Kuerzel mit einem Browser-Shortcut kollidiert, hat das Browser-Kuerzel Vorrang. In diesem Fall nutzen Sie die Command Palette als Alternative.
+!!! info "Browser-Kürzel"
+    ComplianceOS nutzt ++ctrl++ als Modifikator. Falls ein Kürzel mit einem Browser-Shortcut kollidiert, hat das Browser-Kürzel Vorrang. In diesem Fall nutzen Sie die Command Palette als Alternative.

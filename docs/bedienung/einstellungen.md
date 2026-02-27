@@ -1,26 +1,26 @@
 # Einstellungen
 
-Unter Einstellungen verwalten Sie Projekte, Praeferenzen, Team-Mitglieder, geplante Audits, Benachrichtigungen und Feature-Flags.
+Unter Einstellungen verwalten Sie Projekte, Präferenzen, Team-Mitglieder, geplante Audits, Benachrichtigungen und Feature-Flags.
 
 <figure class="screenshot" markdown>
 ![Einstellungen](../screenshots/einstellungen/einstellungen-overview.png)
-<figcaption>Einstellungen: Praeferenzen, Projekte, Team, Zeitplaene, ntfy-Benachrichtigungen, System-Info und Feature-Flags</figcaption>
+<figcaption>Einstellungen: Präferenzen, Projekte, Team, Zeitpläne, ntfy-Benachrichtigungen, System-Info und Feature-Flags</figcaption>
 </figure>
 
 ---
 
-## Praeferenzen
+## Präferenzen
 
 ### Sprache
 
-ComplianceOS unterstuetzt zwei Sprachen:
+ComplianceOS unterstützt zwei Sprachen:
 
 | Sprache | Code | Beschreibung |
 |---------|------|-------------|
-| **Deutsch** | `de` | Standard — alle Oberflaechen-Texte auf Deutsch |
-| **Englisch** | `en` | Alternative — Oberflaeche auf Englisch |
+| **Deutsch** | `de` | Standard — alle Oberflächen-Texte auf Deutsch |
+| **Englisch** | `en` | Alternative — Oberfläche auf Englisch |
 
-Die Sprache beeinflusst die Oberflaeche, Reports und Chat-Antworten.
+Die Sprache beeinflusst die Oberfläche, Reports und Chat-Antworten.
 
 ### Rolle
 
@@ -28,38 +28,38 @@ Die Rolle bestimmt die Standard-Ansicht im Dashboard:
 
 | Rolle | Dashboard-Ansicht | Beschreibung |
 |-------|------------------|-------------|
-| **Compliance** | Vollstaendiges technisches Dashboard | Fuer Compliance-Beauftragte |
-| **CISO** | Technisches Dashboard + Risiko-Sidebar | Fuer IT-Sicherheitsverantwortliche |
-| **Management** | Komprimiertes Executive-Dashboard | Fuer Geschaeftsfuehrung |
+| **Compliance** | Vollständiges technisches Dashboard | Für Compliance-Beauftragte |
+| **CISO** | Technisches Dashboard + Risiko-Sidebar | Für IT-Sicherheitsverantwortliche |
+| **Management** | Komprimiertes Executive-Dashboard | Für Geschäftsführung |
 
-Die Rolle kann jederzeit geaendert werden. Im Dashboard-Header koennen Sie auch direkt zwischen den Ansichten wechseln.
+Die Rolle kann jederzeit geändert werden. Im Dashboard-Header können Sie auch direkt zwischen den Ansichten wechseln.
 
 ---
 
 ## Projekte
 
-ComplianceOS arbeitet projektbezogen. Jedes Projekt repraesentiert eine Organisation, ein Team oder einen Audit-Scope.
+ComplianceOS arbeitet projektbezogen. Jedes Projekt repräsentiert eine Organisation, ein Team oder einen Audit-Scope.
 
 ### Neues Projekt anlegen
 
 1. Scrollen Sie zum Bereich **Projekte**
 2. Geben Sie den **Projektnamen** ein (z.B. "SecureTech Solutions GmbH")
-3. Geben Sie den **Pfad** zum zu pruefenden Projekt-Verzeichnis ein
+3. Geben Sie den **Pfad** zum zu prüfenden Projekt-Verzeichnis ein
 4. Klicken Sie auf **Projekt erstellen**
 
 Das neue Projekt wird automatisch aktiv und erscheint im Dropdown oben rechts.
 
 ### Projekt wechseln
 
-Klicken Sie oben rechts in der Kopfzeile auf den **Projektnamen** und waehlen Sie ein anderes Projekt aus dem Dropdown. Alle Ansichten (Dashboard, Findings, Audits, etc.) wechseln sofort zum ausgewaehlten Projekt.
+Klicken Sie oben rechts in der Kopfzeile auf den **Projektnamen** und wählen Sie ein anderes Projekt aus dem Dropdown. Alle Ansichten (Dashboard, Findings, Audits, etc.) wechseln sofort zum ausgewählten Projekt.
 
 ### Projekt-Isolation
 
-Jedes Projekt hat vollstaendig eigene Daten:
+Jedes Projekt hat vollständig eigene Daten:
 
 | Daten | Beschreibung |
 |-------|-------------|
-| **Audit-Laeufe** | Eigene Audit-Historie und Ergebnisse |
+| **Audit-Läufe** | Eigene Audit-Historie und Ergebnisse |
 | **Findings** | Eigene Findings mit Status und Remediation |
 | **Chat-Sessions** | Eigene Konversationen |
 | **Dokumente** | Eigene hochgeladene Dateien |
@@ -69,27 +69,27 @@ Jedes Projekt hat vollstaendig eigene Daten:
 | **Remediation** | Eigene Massnahmen und Zuweisungen |
 
 !!! tip "Mehrere Projekte"
-    Nutzen Sie separate Projekte fuer verschiedene Organisationen, Abteilungen oder Audit-Scopes. So bleiben die Daten sauber getrennt und Sie koennen gezielt pro Projekt berichten.
+    Nutzen Sie separate Projekte für verschiedene Organisationen, Abteilungen oder Audit-Scopes. So bleiben die Daten sauber getrennt und Sie können gezielt pro Projekt berichten.
 
 ---
 
 ## Team-Mitglieder
 
-Legen Sie Mitarbeiter an die als Verantwortliche fuer Remediation-Aufgaben zugewiesen werden koennen:
+Legen Sie Mitarbeiter an die als Verantwortliche für Remediation-Aufgaben zugewiesen werden können:
 
 | Feld | Pflicht | Beschreibung |
 |------|---------|-------------|
 | **Name** | Ja | Anzeigename im System |
-| **E-Mail** | Nein | Fuer Benachrichtigungen |
+| **E-Mail** | Nein | Für Benachrichtigungen |
 | **Rolle** | Nein | compliance, ciso oder management |
 
-Team-Mitglieder stehen dann im Dropdown "Verantwortlich" bei jedem Finding zur Verfuegung.
+Team-Mitglieder stehen dann im Dropdown "Verantwortlich" bei jedem Finding zur Verfügung.
 
 ---
 
-## Geplante Audits (Zeitplaene)
+## Geplante Audits (Zeitpläne)
 
-Richten Sie automatische Audit-Laeufe ein die ohne manuellen Eingriff ausfuehren:
+Richten Sie automatische Audit-Läufe ein die ohne manuellen Eingriff ausführen:
 
 ### Zeitplan erstellen
 
@@ -99,30 +99,30 @@ Richten Sie automatische Audit-Laeufe ein die ohne manuellen Eingriff ausfuehren
 
 | Feld | Optionen | Beschreibung |
 |------|----------|-------------|
-| **Modus** | Vollaudit / Domain | Welcher Audit-Typ ausgefuehrt wird |
+| **Modus** | Vollaudit / Domain | Welcher Audit-Typ ausgeführt wird |
 | **Domain** | ACCESS, BACKUP, etc. | Nur bei Domain-Modus |
-| **Intervall** | Taeglich / Woechentlich / Monatlich | Ausfuehrungsfrequenz |
-| **Tag** | Montag-Sonntag / 1-28 | Bei woechentlich/monatlich |
+| **Intervall** | Täglich / Wöchentlich / Monatlich | Ausfuehrungsfrequenz |
+| **Tag** | Montag-Sonntag / 1-28 | Bei wöchentlich/monatlich |
 | **Uhrzeit** | 00:00-23:59 | Startzeitpunkt |
 
 4. Klicken Sie auf **Aktivieren**
 
 ### Zeitplan verwalten
 
-Bestehende Zeitplaene koennen:
+Bestehende Zeitpläne können:
 
 - **Aktiviert/Deaktiviert** werden (Toggle-Schalter)
-- **Bearbeitet** werden (Intervall, Modus aendern)
-- **Geloescht** werden
+- **Bearbeitet** werden (Intervall, Modus ändern)
+- **Gelöscht** werden
 
 !!! warning "Container muss laufen"
-    Geplante Audits funktionieren nur solange der ComplianceOS-Container laeuft. Stellen Sie sicher dass `restart: unless-stopped` in der `docker-compose.yml` gesetzt ist.
+    Geplante Audits funktionieren nur solange der ComplianceOS-Container läuft. Stellen Sie sicher dass `restart: unless-stopped` in der `docker-compose.yml` gesetzt ist.
 
 ---
 
 ## ntfy-Benachrichtigungen
 
-ComplianceOS kann Push-Benachrichtigungen ueber [ntfy](https://ntfy.sh) senden — an Ihr Smartphone, Ihren Desktop oder andere Endgeraete.
+ComplianceOS kann Push-Benachrichtigungen über [ntfy](https://ntfy.sh) senden — an Ihr Smartphone, Ihren Desktop oder andere Endgeräte.
 
 ### ntfy einrichten
 
@@ -130,7 +130,7 @@ ComplianceOS kann Push-Benachrichtigungen ueber [ntfy](https://ntfy.sh) senden �
 2. Geben Sie die **ntfy Server-URL** ein (z.B. `https://ntfy.sh` oder Ihr eigener Server)
 3. Geben Sie das **Topic** ein (z.B. `complianceos-alerts`)
 4. Klicken Sie auf **Speichern**
-5. Klicken Sie auf **Test senden** um die Verbindung zu pruefen
+5. Klicken Sie auf **Test senden** um die Verbindung zu prüfen
 
 ### Benachrichtigungen erhalten bei
 
@@ -149,25 +149,25 @@ Der Bereich **Claude AI** zeigt den aktuellen Verbindungsstatus:
 
 | Status | Farbe | Bedeutung |
 |--------|-------|-----------|
-| **Authentifiziert und einsatzbereit** | Gruen | Claude AI ist verbunden und funktionsfaehig |
+| **Authentifiziert und einsatzbereit** | Grün | Claude AI ist verbunden und funktionsfähig |
 | **CLI installiert, nicht authentifiziert** | Gelb | Claude CLI vorhanden, aber kein Token |
 | **CLI nicht gefunden** | Rot | Claude CLI nicht installiert |
 
-Bei Problemen mit der Authentifizierung navigieren Sie zu `/setup` um den OAuth-Flow erneut durchzufuehren (siehe [Setup](../schnellstart/setup.md)).
+Bei Problemen mit der Authentifizierung navigieren Sie zu `/setup` um den OAuth-Flow erneut durchzuführen (siehe [Setup](../schnellstart/setup.md)).
 
 ---
 
 ## System-Info
 
-Zeigt technische Informationen ueber die ComplianceOS-Installation:
+Zeigt technische Informationen über die ComplianceOS-Installation:
 
 | Information | Beschreibung |
 |-------------|-------------|
 | **Version** | Aktuell installierte ComplianceOS-Version |
 | **Python-Version** | Python-Runtime-Version |
-| **Datenbankgroesse** | Aktuelle Groesse der SQLite-Datenbank |
+| **Datenbankgrösse** | Aktuelle Grösse der SQLite-Datenbank |
 | **Standards** | Anzahl der geladenen Standards (9) |
-| **Controls** | Anzahl technischer Pruefpunkte (135) |
+| **Controls** | Anzahl technischer Prüfpunkte (135) |
 | **AUDIT-CHECKs** | Anzahl semantischer Anforderungen (2.042) |
 | **Domains** | Anzahl Sicherheitsbereiche (12) |
 
@@ -179,12 +179,12 @@ Feature-Flags steuern welche optionalen Funktionen aktiviert sind:
 
 | Flag | Standard | Beschreibung |
 |------|----------|-------------|
-| **teammates** | `false` | KI-Agent-Orchestrierung fuer parallele Audit-Bewertung |
-| **policy_gen** | `true` | KI-gestuetzte Policy-Generierung |
+| **teammates** | `false` | KI-Agent-Orchestrierung für parallele Audit-Bewertung |
+| **policy_gen** | `true` | KI-gestützte Policy-Generierung |
 | **pdf_upload** | `true` | PDF-Dokument-Upload und -Analyse |
 | **dsgvo** | `true` | DSGVO-Standard in Audits einbeziehen |
 
-Feature-Flags koennen hier per Toggle umgeschaltet werden. Die Aenderung wird sofort wirksam.
+Feature-Flags können hier per Toggle umgeschaltet werden. Die Änderung wird sofort wirksam.
 
 !!! info "Umgebungsvariablen"
-    Feature-Flags koennen auch per Umgebungsvariable gesetzt werden (z.B. `ENABLE_TEAMMATES=true` in der `docker-compose.yml`). Die Umgebungsvariable setzt den Initialwert — Aenderungen ueber die Oberflaeche haben Vorrang.
+    Feature-Flags können auch per Umgebungsvariable gesetzt werden (z.B. `ENABLE_TEAMMATES=true` in der `docker-compose.yml`). Die Umgebungsvariable setzt den Initialwert — Änderungen über die Oberfläche haben Vorrang.

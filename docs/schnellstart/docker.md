@@ -38,7 +38,7 @@ volumes:
 |----------|----------|-------------|
 | `COMPLIANCEOS_PORT` | `8001` | Interner Server-Port |
 | `COMPLIANCEOS_LOG_LEVEL` | `INFO` | Log-Level (`DEBUG`, `INFO`, `WARNING`, `ERROR`) |
-| `COMPLIANCEOS_LANG` | `de` | Oberflaechen-Sprache (`de` oder `en`) |
+| `COMPLIANCEOS_LANG` | `de` | Oberflächen-Sprache (`de` oder `en`) |
 | `DATABASE_URL` | `sqlite:///data/complianceos.db` | Datenbank-Pfad |
 | `ENABLE_TEAMMATES` | `false` | KI-Agent-Orchestrierung (parallele Audit-Execution) |
 | `ENABLE_PDF_UPLOAD` | `true` | PDF-Dokument-Upload |
@@ -46,7 +46,7 @@ volumes:
 | `ENABLE_DSGVO` | `true` | DSGVO-Standard einbeziehen |
 
 !!! tip "Feature Flags"
-    Alle `ENABLE_*`-Variablen koennen auch ueber die **Einstellungen** im Browser gesteuert werden. Die Umgebungsvariablen setzen den Initialwert.
+    Alle `ENABLE_*`-Variablen können auch über die **Einstellungen** im Browser gesteuert werden. Die Umgebungsvariablen setzen den Initialwert.
 
 ---
 
@@ -104,7 +104,7 @@ docker compose logs --tail 100 complianceos
 docker compose logs complianceos 2>&1 | grep ERROR
 ```
 
-ComplianceOS nutzt strukturiertes JSON-Logging (structlog), optimiert fuer Log-Aggregation mit Loki, Elasticsearch oder aehnlichen Systemen.
+ComplianceOS nutzt strukturiertes JSON-Logging (structlog), optimiert für Log-Aggregation mit Loki, Elasticsearch oder ähnlichen Systemen.
 
 ---
 
@@ -125,9 +125,9 @@ services:
 
 | Ressource | Minimum | Empfohlen | Beschreibung |
 |-----------|---------|-----------|-------------|
-| RAM | 256 MB | 512 MB - 1 GB | Abhaengig von Audit-Groesse und gleichzeitigen Nutzern |
+| RAM | 256 MB | 512 MB - 1 GB | Abhängig von Audit-Grösse und gleichzeitigen Nutzern |
 | CPU | 0.5 Cores | 2 Cores | Audit-Execution ist CPU-intensiv |
-| Disk | 100 MB | 1-5 GB | Abhaengig von Dokumenten-Uploads und Audit-Historie |
+| Disk | 100 MB | 1-5 GB | Abhängig von Dokumenten-Uploads und Audit-Historie |
 
 ---
 
@@ -172,8 +172,8 @@ server {
 }
 ```
 
-!!! warning "SSE-Unterstuetzung"
-    Wenn Sie einen Reverse Proxy verwenden, deaktivieren Sie `proxy_buffering` fuer die korrekte Funktion der Live-Fortschrittsanzeige bei Audits.
+!!! warning "SSE-Unterstützung"
+    Wenn Sie einen Reverse Proxy verwenden, deaktivieren Sie `proxy_buffering` für die korrekte Funktion der Live-Fortschrittsanzeige bei Audits.
 
 ---
 
@@ -186,7 +186,7 @@ docker compose build
 docker compose up -d
 ```
 
-ComplianceOS fuehrt Datenbank-Migrationen automatisch beim Start durch. Bestehende Daten bleiben erhalten.
+ComplianceOS führt Datenbank-Migrationen automatisch beim Start durch. Bestehende Daten bleiben erhalten.
 
 ---
 
@@ -205,7 +205,7 @@ docker compose ps
 docker compose exec complianceos bash
 ```
 
-### Health-Check schlaegt fehl
+### Health-Check schlägt fehl
 
 ```bash
 # Manueller Health-Check
