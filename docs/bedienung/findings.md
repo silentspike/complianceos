@@ -1,12 +1,12 @@
 # Findings
 
-Findings sind die Ergebnisse eines Audits — identifizierte Abweichungen, Beobachtungen und Verbesserungsmoeglichkeiten. ComplianceOS erfasst jedes Finding mit Beschreibung, Evidenz, Begruendung und Empfehlung.
+Findings sind die Ergebnisse eines Audits — identifizierte Abweichungen, Beobachtungen und Verbesserungsmöglichkeiten. ComplianceOS erfasst jedes Finding mit Beschreibung, Evidenz, Begründung und Empfehlung.
 
 ---
 
 ## Findings-Browser
 
-Die Findings-Uebersicht zeigt alle Findings des aktuellen Projekts mit umfangreichen Filter- und Sortieroptionen.
+Die Findings-Übersicht zeigt alle Findings des aktuellen Projekts mit umfangreichen Filter- und Sortieroptionen.
 
 <figure class="screenshot" markdown>
 ![Findings Browser](../screenshots/findings/findings-browser.png)
@@ -15,11 +15,11 @@ Die Findings-Uebersicht zeigt alle Findings des aktuellen Projekts mit umfangrei
 
 ### Trend-Diagramm
 
-Am oberen Rand zeigt ein **Findings-Trend-Diagramm** die Entwicklung der Findings ueber die letzten Audit-Laeufe. So erkennen Sie auf einen Blick ob sich Ihr Compliance-Zustand verbessert oder verschlechtert.
+Am oberen Rand zeigt ein **Findings-Trend-Diagramm** die Entwicklung der Findings über die letzten Audit-Läufe. So erkennen Sie auf einen Blick ob sich Ihr Compliance-Zustand verbessert oder verschlechtert.
 
 ### Filter
 
-Die Filter-Leiste ermoeglicht es, die Findings-Liste gezielt einzuschraenken:
+Die Filter-Leiste ermöglicht es, die Findings-Liste gezielt einzuschränken:
 
 | Filter | Optionen | Beschreibung |
 |--------|----------|-------------|
@@ -28,7 +28,7 @@ Die Filter-Leiste ermoeglicht es, die Findings-Liste gezielt einzuschraenken:
 | **Status** | Offen, In Arbeit, Behoben, Akzeptiert | Nach Bearbeitungsstand |
 | **Audit-Lauf** | Run-IDs (z.B. run-st-2026-02) | Findings eines bestimmten Audits |
 
-Mehrere Filter koennen kombiniert werden. Die Ergebnisliste aktualisiert sich sofort bei jeder Filteraenderung.
+Mehrere Filter können kombiniert werden. Die Ergebnisliste aktualisiert sich sofort bei jeder Filteränderung.
 
 ### Findings-Liste
 
@@ -37,10 +37,10 @@ Jedes Finding wird in der Liste dargestellt mit:
 - **Severity-Badge** (farbcodiert: rot, orange, blau, lila)
 - **Control-ID** (z.B. CRYPTO-001, ACCESS-003)
 - **Titel** der Abweichung
-- **Domain** des zugehoerigen Controls
+- **Domain** des zugehörigen Controls
 - **Status** des Findings
 
-Klicken Sie auf ein Finding um die Detailansicht zu oeffnen.
+Klicken Sie auf ein Finding um die Detailansicht zu öffnen.
 
 ---
 
@@ -50,9 +50,9 @@ ComplianceOS klassifiziert jedes Finding in eine von vier Severity-Stufen:
 
 | Severity | Badge | Bedeutung | Handlungsbedarf | Typisches Beispiel |
 |----------|-------|-----------|-----------------|-------------------|
-| **Major NC** | <span class="badge badge--major-nc">MAJOR NC</span> | Schwerwiegende Nichtkonformitaet | Sofortige Massnahme erforderlich | Keine Verschluesselung fuer Daten in Transit |
-| **Minor NC** | <span class="badge badge--minor-nc">MINOR NC</span> | Geringfuegige Nichtkonformitaet | Behebung innerhalb definierter Frist | Passwort-Policy erlaubt 6 statt 12 Zeichen |
-| **Observation** | <span class="badge badge--info">OBSERVATION</span> | Beobachtung | Verbesserungspotenzial pruefen | MFA empfohlen, aber nicht konfiguriert |
+| **Major NC** | <span class="badge badge--major-nc">MAJOR NC</span> | Schwerwiegende Nichtkonformität | Sofortige Massnahme erforderlich | Keine Verschlüsselung für Daten in Transit |
+| **Minor NC** | <span class="badge badge--minor-nc">MINOR NC</span> | Geringfügige Nichtkonformität | Behebung innerhalb definierter Frist | Passwort-Policy erlaubt 6 statt 12 Zeichen |
+| **Observation** | <span class="badge badge--info">OBSERVATION</span> | Beobachtung | Verbesserungspotenzial prüfen | MFA empfohlen, aber nicht konfiguriert |
 | **OFI** | <span class="badge badge--ofi">OFI</span> | Opportunity for Improvement | Optional, Best Practice | Automatisiertes Key-Rotation einrichten |
 
 ### Severity-Regeln
@@ -60,18 +60,18 @@ ComplianceOS klassifiziert jedes Finding in eine von vier Severity-Stufen:
 Die Severity wird nach folgenden Kriterien vergeben:
 
 - **Major NC**: Fehlende oder nicht wirksame Sicherheitsmassnahme die ein direktes Risiko darstellt
-- **Minor NC**: Massnahme vorhanden aber nicht vollstaendig oder nicht konform mit den Anforderungen
+- **Minor NC**: Massnahme vorhanden aber nicht vollständig oder nicht konform mit den Anforderungen
 - **Observation**: Massnahme vorhanden, aber Verbesserungspotenzial identifiziert
-- **OFI**: Best Practice die ueber die Anforderungen hinausgeht
+- **OFI**: Best Practice die über die Anforderungen hinausgeht
 
 !!! info "Fehlende Evidenz"
-    Wenn ein Control nicht geprueft werden kann weil keine Evidenz vorliegt, wird es als **Minor NC** klassifiziert — nicht als compliant. Fehlende Nachweise werden nie als konform bewertet.
+    Wenn ein Control nicht geprüft werden kann weil keine Evidenz vorliegt, wird es als **Minor NC** klassifiziert — nicht als compliant. Fehlende Nachweise werden nie als konform bewertet.
 
 ---
 
 ## Finding-Detail
 
-Ein Klick auf ein Finding oeffnet die ausfuehrliche Detailansicht:
+Ein Klick auf ein Finding öffnet die ausführliche Detailansicht:
 
 <figure class="screenshot" markdown>
 ![Finding Detail](../screenshots/findings/finding-detail.png)
@@ -84,38 +84,38 @@ Ein Klick auf ein Finding oeffnet die ausfuehrliche Detailansicht:
 |---------|--------|
 | **Beschreibung** | Was wurde festgestellt — klare Darstellung der Abweichung |
 | **Empfehlung** | Konkrete Handlungsempfehlung zur Behebung |
-| **Evidence** | Technische Belege: Dateipfade, Konfigurationsauszuege, Log-Eintraege |
-| **Reasoning Chain** | Nachvollziehbare Begruendungskette der KI-Bewertung |
-| **Control-Referenz** | Zugehoeriger Standard (z.B. ISO 27001 A.8.24) und Control-ID |
-| **Confidence** | Zuverlaessigkeit der automatischen Bewertung (0-100%) |
+| **Evidence** | Technische Belege: Dateipfade, Konfigurationsauszüge, Log-Einträge |
+| **Reasoning Chain** | Nachvollziehbare Begründungskette der KI-Bewertung |
+| **Control-Referenz** | Zugehöriger Standard (z.B. ISO 27001 A.8.24) und Control-ID |
+| **Confidence** | Zuverlässigkeit der automatischen Bewertung (0-100%) |
 | **Standards** | Alle Standards die diesen Control referenzieren (Cross-Standard-Mapping) |
 
 ### Evidence verstehen
 
-Die Evidence-Sektion zeigt welche Dateien und Konfigurationen geprueft wurden:
+Die Evidence-Sektion zeigt welche Dateien und Konfigurationen geprüft wurden:
 
 - **Dateipfade**: Welche Dateien im Projekt analysiert wurden
-- **Konfigurationsauszuege**: Relevante Konfigurationseinstellungen
-- **Log-Eintraege**: Auffaellige Log-Meldungen
+- **Konfigurationsauszüge**: Relevante Konfigurationseinstellungen
+- **Log-Einträge**: Auffällige Log-Meldungen
 - **Fehlende Artefakte**: Erwartete Dateien die nicht gefunden wurden
 
 ### Reasoning Chain
 
-Die Reasoning Chain macht die KI-Bewertung nachvollziehbar. Sie zeigt Schritt fuer Schritt:
+Die Reasoning Chain macht die KI-Bewertung nachvollziehbar. Sie zeigt Schritt für Schritt:
 
 1. Welche Anforderung der Control stellt
 2. Welche Evidenz gefunden wurde
 3. Wie die Evidenz bewertet wurde
-4. Warum die gewaehlte Severity vergeben wurde
+4. Warum die gewählte Severity vergeben wurde
 
 !!! tip "Confidence-Wert"
-    Der Confidence-Wert zeigt wie sicher die automatische Bewertung ist. Bei Werten unter 60% empfiehlt sich eine manuelle Ueberpruefung des Findings.
+    Der Confidence-Wert zeigt wie sicher die automatische Bewertung ist. Bei Werten unter 60% empfiehlt sich eine manuelle Überprüfung des Findings.
 
 ---
 
 ## Status-Workflow
 
-Jedes Finding durchlaeuft einen definierten Lebenszyklus:
+Jedes Finding durchläuft einen definierten Lebenszyklus:
 
 ```mermaid
 flowchart LR
@@ -132,47 +132,47 @@ flowchart LR
 
 ### Status-Bedeutung
 
-| Status | Beschreibung | Naechster Schritt |
+| Status | Beschreibung | Nächster Schritt |
 |--------|-------------|-------------------|
 | **Offen** | Finding wurde identifiziert, noch keine Massnahme begonnen | Massnahme planen und zuweisen |
 | **In Arbeit** | Massnahme wird aktiv umgesetzt | Nach Abschluss auf "Behoben" setzen |
-| **Behoben** | Massnahme wurde umgesetzt, wartet auf Verifikation | Domain-Audit zur Verifikation durchfuehren |
+| **Behoben** | Massnahme wurde umgesetzt, wartet auf Verifikation | Domain-Audit zur Verifikation durchführen |
 | **Akzeptiert** | Finding verifiziert und abgeschlossen | Keine weitere Aktion erforderlich |
 
-### Status aendern
+### Status ändern
 
-In der Finding-Detailansicht finden Sie im Bereich **Remediation-Status** Buttons fuer jeden moeglichen Status-Uebergang:
+In der Finding-Detailansicht finden Sie im Bereich **Remediation-Status** Buttons für jeden möglichen Status-Übergang:
 
-1. Oeffnen Sie das Finding in der Detailansicht
-2. Klicken Sie auf den gewuenschten Status-Button
+1. Öffnen Sie das Finding in der Detailansicht
+2. Klicken Sie auf den gewünschten Status-Button
 3. Der Status wird sofort aktualisiert
 
-!!! warning "Zuruecksetzen"
-    Findings koennen auch zurueckgesetzt werden: "Behoben" zurueck auf "In Arbeit" oder "In Arbeit" zurueck auf "Offen". Dies ist nuetzlich wenn sich herausstellt dass eine Massnahme nicht ausreichend war.
+!!! warning "Zurücksetzen"
+    Findings können auch zurückgesetzt werden: "Behoben" zurück auf "In Arbeit" oder "In Arbeit" zurück auf "Offen". Dies ist nützlich wenn sich herausstellt dass eine Massnahme nicht ausreichend war.
 
 ---
 
 ## Remediation-Tracking
 
-ComplianceOS bietet integriertes Massnahmen-Tracking direkt aus den Findings heraus. Fuer eine ausfuehrliche Beschreibung der Remediation-Funktionen siehe [Remediation](remediation.md).
+ComplianceOS bietet integriertes Massnahmen-Tracking direkt aus den Findings heraus. Für eine ausführliche Beschreibung der Remediation-Funktionen siehe [Remediation](remediation.md).
 
-### Prioritaet und Zuweisung
+### Priorität und Zuweisung
 
-Fuer jedes Finding koennen Sie festlegen:
+Für jedes Finding können Sie festlegen:
 
-- **Prioritaet**: Kritisch, Hoch, Mittel, Niedrig
-- **Zustaendiger**: Teammitglied das die Massnahme umsetzt
-- **Faelligkeitsdatum**: Deadline fuer die Behebung
+- **Priorität**: Kritisch, Hoch, Mittel, Niedrig
+- **Zuständiger**: Teammitglied das die Massnahme umsetzt
+- **Fälligkeitsdatum**: Deadline für die Behebung
 
 ### Ansichten
 
-Die Remediation-Uebersicht bietet drei Ansichten:
+Die Remediation-Übersicht bietet drei Ansichten:
 
-| Ansicht | Beschreibung | Beste fuer |
+| Ansicht | Beschreibung | Beste für |
 |---------|-------------|------------|
-| **Kanban** | Spalten nach Status (Offen, In Arbeit, Behoben, Akzeptiert) | Visuelles Tracking, Statusueberblick |
+| **Kanban** | Spalten nach Status (Offen, In Arbeit, Behoben, Akzeptiert) | Visuelles Tracking, Statusüberblick |
 | **Liste** | Tabellarische Ansicht mit Sortierung | Detaillierte Analyse, Priorisierung |
-| **Kalender** | Findings nach Faelligkeitsdatum | Deadline-Management |
+| **Kalender** | Findings nach Fälligkeitsdatum | Deadline-Management |
 
 ---
 
@@ -182,26 +182,26 @@ Klicken Sie auf **Export** um die aktuelle Findings-Liste als CSV-Datei herunter
 
 Der Export:
 
-- Beruecksichtigt die aktiven Filter
-- Enthaelt alle sichtbaren Findings
-- Eignet sich fuer Weiterverarbeitung in Excel oder Import in Ticketing-Systeme
-- Enthaelt: Finding-ID, Control-ID, Severity, Domain, Status, Beschreibung, Empfehlung
+- Berücksichtigt die aktiven Filter
+- Enthält alle sichtbaren Findings
+- Eignet sich für Weiterverarbeitung in Excel oder Import in Ticketing-Systeme
+- Enthält: Finding-ID, Control-ID, Severity, Domain, Status, Beschreibung, Empfehlung
 
 !!! tip "Export-Tipp"
-    Setzen Sie vor dem Export die gewuenschten Filter. So exportieren Sie zum Beispiel nur die offenen Major NCs einer bestimmten Domain.
+    Setzen Sie vor dem Export die gewünschten Filter. So exportieren Sie zum Beispiel nur die offenen Major NCs einer bestimmten Domain.
 
 ---
 
 ## Tipps zum Umgang mit Findings
 
 !!! tip "Priorisierung"
-    Beginnen Sie immer mit den **Major NCs** — diese stellen die groessten Risiken dar. Minor NCs sollten innerhalb einer definierten Frist (z.B. 90 Tage) behoben werden. Observations und OFIs koennen in die langfristige Planung aufgenommen werden.
+    Beginnen Sie immer mit den **Major NCs** — diese stellen die grössten Risiken dar. Minor NCs sollten innerhalb einer definierten Frist (z.B. 90 Tage) behoben werden. Observations und OFIs können in die langfristige Planung aufgenommen werden.
 
 !!! tip "Cross-Standard-Referenz"
-    Viele Findings betreffen Controls die von mehreren Standards referenziert werden. Pruefen Sie in der Finding-Detailansicht den Bereich "Standards" um zu sehen welche Standards betroffen sind. Eine Massnahme kann so mehrere Standards gleichzeitig abdecken.
+    Viele Findings betreffen Controls die von mehreren Standards referenziert werden. Prüfen Sie in der Finding-Detailansicht den Bereich "Standards" um zu sehen welche Standards betroffen sind. Eine Massnahme kann so mehrere Standards gleichzeitig abdecken.
 
 !!! tip "Verifikation"
-    Nach Behebung einer Massnahme fuehren Sie einen [Domain-Audit](audits.md) durch um die Wirksamkeit zu pruefen. Erst wenn der Domain-Audit das Finding nicht mehr identifiziert, sollte der Status auf "Akzeptiert" gesetzt werden.
+    Nach Behebung einer Massnahme führen Sie einen [Domain-Audit](audits.md) durch um die Wirksamkeit zu prüfen. Erst wenn der Domain-Audit das Finding nicht mehr identifiziert, sollte der Status auf "Akzeptiert" gesetzt werden.
 
 ---
 
@@ -210,8 +210,8 @@ Der Export:
 <div class="video-container" markdown>
 <video controls width="100%">
   <source src="../videos/finding-lifecycle.mp4" type="video/mp4">
-  Ihr Browser unterstuetzt kein Video. <a href="../videos/finding-lifecycle.mp4">Video herunterladen</a>.
+  Ihr Browser unterstützt kein Video. <a href="../videos/finding-lifecycle.mp4">Video herunterladen</a>.
 </video>
 </div>
 
-Das Video zeigt den kompletten Finding-Lifecycle: Vom Findings-Browser ueber die Detail-Ansicht mit Evidence und Reasoning bis zur Statusaenderung und Remediation-Zuweisung.
+Das Video zeigt den kompletten Finding-Lifecycle: Vom Findings-Browser über die Detail-Ansicht mit Evidence und Reasoning bis zur Statusänderung und Remediation-Zuweisung.
