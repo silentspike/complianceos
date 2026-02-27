@@ -1,46 +1,164 @@
 # Policies
 
-ComplianceOS kann Richtlinien-Dokumente aus Vorlagen generieren. Diese koennen als Ausgangspunkt fuer Ihre organisationsspezifischen Policies dienen.
+ComplianceOS generiert Richtlinien-Dokumente aus Vorlagen, abgestimmt auf die Anforderungen der aktiven Standards. Sechs Vorlagen decken die wichtigsten Compliance-Bereiche ab.
 
+<figure class="screenshot" markdown>
 ![Policies Uebersicht](../screenshots/policies/policies-overview.png)
+<figcaption>Policies: 6 Vorlagen mit Standard-Badges und generierte Dokumente in der Uebersicht</figcaption>
+</figure>
+
+---
 
 ## Verfuegbare Vorlagen
 
-| Vorlage | Beschreibung |
-|---------|-------------|
-| **Passwort-Richtlinie** | Passwort-Anforderungen, MFA, Sperrung |
-| **Backup-Richtlinie** | Sicherungsintervalle, Aufbewahrung, Tests |
-| **Incident-Richtlinie** | Meldewege, Eskalation, Dokumentation |
-| **Zugriffs-Richtlinie** | Least Privilege, Rollen, Reviews |
-| **ISMS-Richtlinie** | Informationssicherheits-Managementsystem |
-| **Datenschutz-Richtlinie** | DSGVO-Anforderungen, Verarbeitungstaetigkeiten |
+ComplianceOS stellt sechs Policy-Vorlagen bereit. Jede Vorlage ist mit den relevanten Standards verknuepft:
+
+| Vorlage | Beschreibung | Standards |
+|---------|-------------|-----------|
+| **Passwort-Richtlinie** | Passwort-Anforderungen, Komplexitaet, MFA, Kontosperrung, Passwort-Manager | ISO 27001, NIS2, BSI |
+| **Backup-Richtlinie** | Sicherungsintervalle, Aufbewahrungsfristen, Recovery-Tests, 3-2-1-Regel | ISO 27001, ISO 22301, BSI |
+| **Incident-Richtlinie** | Meldewege, Eskalationsstufen, Reaktionszeiten, Dokumentation, Lessons Learned | ISO 27001, ISO 27035, NIS2 |
+| **Zugriffs-Richtlinie** | Least Privilege, rollenbasierte Zugriffskontrolle, Access Reviews, Offboarding | ISO 27001, NIS2, DSGVO |
+| **ISMS-Richtlinie** | Informationssicherheits-Managementsystem, Geltungsbereich, Verantwortlichkeiten | ISO 27001, ISO 27005, NIS2 |
+| **Datenschutz-Richtlinie** | DSGVO-Anforderungen, Verarbeitungstaetigkeiten, Betroffenenrechte, TOM | DSGVO, ISO 27018, NIS2 |
+
+### Standard-Badges
+
+Bei jeder Vorlage zeigen **Standard-Badges** welche Standards die Policy abdeckt. So erkennen Sie auf einen Blick welche Standards von der jeweiligen Richtlinie profitieren.
+
+---
 
 ## Policy generieren
 
+### Schritt-fuer-Schritt
+
 1. Navigieren Sie zu **Policies** in der Seitenleiste
-2. Waehlen Sie eine Vorlage aus dem Dropdown
+2. Waehlen Sie eine Vorlage aus den 6 verfuegbaren Karten
 3. Klicken Sie auf **Generieren**
+4. Die Generierung startet — bei KI-Unterstuetzung wird die Policy kontextbezogen erstellt
+5. Nach Abschluss werden Sie zur Detailansicht weitergeleitet
 
-Die generierte Policy erscheint sofort in der Detailansicht.
+### Mit und ohne KI
 
-## Detailansicht
+| Modus | Beschreibung | Ergebnis |
+|-------|-------------|----------|
+| **Mit Claude AI** | KI generiert die Policy basierend auf Ihren Audit-Ergebnissen, Findings und Projektkontext | Kontextbezogene Policy mit spezifischen Empfehlungen |
+| **Ohne KI** | Statische Vorlage aus dem Template-Registry | Allgemeine Best-Practice-Policy |
 
-Generierte Policies werden als Markdown angezeigt und enthalten:
+!!! info "Feature Flag"
+    Die KI-gestuetzte Policy-Generierung erfordert `ENABLE_POLICY_GEN=true` (Standard: aktiviert) und eine aktive Claude AI Verbindung.
 
-- Geltungsbereich
-- Verantwortlichkeiten
-- Konkrete Anforderungen
-- Standard-Referenzen (ISO, NIS2, BSI)
-- Inkrafttreten und Review-Zyklus
+---
+
+## Policy-Detailansicht
+
+Generierte Policies werden als formatiertes Markdown angezeigt:
+
+<figure class="screenshot" markdown>
+![Policy Detail](../screenshots/policies/policy-detail.png)
+<figcaption>Policy-Detail: Metadaten und Markdown-gerenderte Passwort-Richtlinie</figcaption>
+</figure>
+
+### Struktur einer generierten Policy
+
+Jede Policy enthaelt standardisierte Abschnitte:
+
+| Abschnitt | Inhalt |
+|-----------|--------|
+| **Geltungsbereich** | Fuer wen und was die Richtlinie gilt |
+| **Verantwortlichkeiten** | Wer fuer Umsetzung und Kontrolle zustaendig ist |
+| **Anforderungen** | Konkrete technische und organisatorische Massnahmen |
+| **Standard-Referenzen** | Zuordnung zu ISO, NIS2, BSI, DSGVO Controls |
+| **Inkrafttreten** | Datum und Review-Zyklus |
+| **Versionshistorie** | Aenderungsprotokoll |
+
+### Metadaten
+
+In der Detailansicht sehen Sie zusaetzlich:
+
+- **Vorlage**: Welche Vorlage als Basis diente
+- **Erstellungsdatum**: Wann die Policy generiert wurde
+- **Generierungsmethode**: KI oder Template
+- **Wortanzahl**: Umfang des Dokuments
+
+---
+
+## Vorlagen im Detail
+
+### Passwort-Richtlinie
+
+Deckt ab: Minimale Passwortlaenge (mind. 12 Zeichen), Komplexitaetsanforderungen, MFA-Pflicht, Kontosperrung nach Fehlversuchen, Passwort-Manager-Empfehlung, Verbot von Passwort-Wiederverwendung.
+
+**Relevante Controls:** ACCESS-001, ACCESS-002, ACCESS-003
+
+### Backup-Richtlinie
+
+Deckt ab: Sicherungsintervalle (RPO), Aufbewahrungsfristen, 3-2-1-Regel (3 Kopien, 2 Medien, 1 Offsite), Recovery-Tests (RTO-Validierung), Verschluesselung von Backups.
+
+**Relevante Controls:** BACKUP-001 bis BACKUP-010
+
+### Incident-Richtlinie
+
+Deckt ab: Meldewege und Eskalationsstufen, Reaktionszeiten nach Severity, Dokumentationspflichten, NIS2-Meldefristen (24h/72h), Lessons Learned Prozess.
+
+**Relevante Controls:** INCIDENT-001 bis INCIDENT-011
+
+### Zugriffs-Richtlinie
+
+Deckt ab: Least-Privilege-Prinzip, rollenbasierte Zugriffskontrolle (RBAC), regelmaessige Access Reviews, Onboarding/Offboarding-Prozesse, Privileged Access Management.
+
+**Relevante Controls:** ACCESS-004 bis ACCESS-015
+
+### ISMS-Richtlinie
+
+Deckt ab: Geltungsbereich des ISMS, Sicherheitsziele, Rollen und Verantwortlichkeiten, Risikomanagement-Prozess, Kontinuierliche Verbesserung (PDCA).
+
+**Relevante Controls:** Alle Domains (uebergreifend)
+
+### Datenschutz-Richtlinie
+
+Deckt ab: Verzeichnis der Verarbeitungstaetigkeiten, Betroffenenrechte (Auskunft, Loeschung, Portabilitaet), technische und organisatorische Massnahmen (TOM), Datenschutz-Folgenabschaetzung, Auftragsverarbeitung.
+
+**Relevante Controls:** PII-001 bis PII-010
+
+---
 
 ## Policies verwalten
 
-Alle generierten Policies werden gespeichert und koennen:
+### Generierte Dokumente
 
-- Jederzeit wieder eingesehen werden
-- Als Grundlage fuer Ihre eigenen Dokumente dienen
-- Mit Control-Mappings verknuepft werden
+Alle generierten Policies werden in der Datenbank gespeichert und in der Uebersicht aufgelistet:
 
-!!! tip "Anpassung"
-    Die generierten Policies sind Vorlagen. Passen Sie diese an Ihre
-    Organisation an, bevor Sie sie offiziell in Kraft setzen.
+- **Titel** der Policy
+- **Vorlage** die als Basis diente
+- **Erstellungsdatum**
+- **Standard-Badges** der abgedeckten Standards
+
+### Policies als Grundlage nutzen
+
+Die generierten Policies sind **Vorlagen** die an Ihre Organisation angepasst werden muessen:
+
+1. Generieren Sie die Policy in ComplianceOS
+2. Lesen Sie den Inhalt in der Detailansicht
+3. Kopieren Sie den Markdown-Text
+4. Passen Sie ihn an Ihre spezifischen Anforderungen an
+5. Lassen Sie die finale Policy von der Geschaeftsfuehrung freigeben
+
+!!! warning "Anpassung erforderlich"
+    Generierte Policies sind Ausgangspunkte, keine fertigen Dokumente. Sie muessen an Ihre Organisationsstruktur, vorhandene Prozesse und spezifische Anforderungen angepasst werden.
+
+!!! tip "Coverage pruefen"
+    Unter [Reports > Cross-Standard-Mapping](reports.md) sehen Sie welche Standards bereits durch Policies abgedeckt sind und wo noch Luecken bestehen.
+
+---
+
+## Video: Policy-Generierung
+
+<div class="video-container" markdown>
+<video controls width="100%">
+  <source src="../videos/policy-generation.mp4" type="video/mp4">
+  Ihr Browser unterstuetzt kein Video. <a href="../videos/policy-generation.mp4">Video herunterladen</a>.
+</video>
+</div>
+
+Das Video zeigt die Policy-Generierung: Template-Auswahl, Konfiguration der Parameter, Generierungsprozess und die fertige Policy in der Detail-Ansicht mit Markdown-Rendering.
