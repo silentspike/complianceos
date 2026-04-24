@@ -33,7 +33,7 @@ Details: [Datenschutz](../schnellstart/datenschutz.md)
 
 ### Ist ComplianceOS kostenlos?
 
-ComplianceOS ist unter der Apache-2.0-Lizenz frei verfügbar. Die optionale KI-Integration erfordert eine Claude Code Subscription von Anthropic.
+ComplianceOS ist proprietaere Software (Proprietary License, EULA). Fuer Evaluation bitte ueber das [Evaluation Request Template](https://github.com/silentspike/complianceos/issues/new?template=evaluation_request.yml) anfragen. Die optionale KI-Integration erfordert eine Claude Code Subscription von Anthropic.
 
 ---
 
