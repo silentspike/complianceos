@@ -65,7 +65,6 @@ nav:
     - schnellstart/installation.md
     - schnellstart/setup.md
     - schnellstart/erste-schritte.md
-    - schnellstart/docker.md
     - schnellstart/datenschutz.md
   - Bedienung:
     - bedienung/dashboard.md

@@ -188,7 +188,7 @@ Für eine detaillierte technische Erklärung der Audit-Engine und Bewertungsmeth
 | **AUDIT-CHECKs** | 2.042 semantische Anforderungen |
 | **Deployment** | Docker Compose oder pip install |
 | **Datenbank** | SQLite (WAL-Modus, lokal) |
-| **Lizenz** | Apache-2.0 |
+| **Lizenz** | Proprietary (EULA) |
 
 !!! warning "Rechtlicher Hinweis"
     ComplianceOS ist ein technisches Werkzeug zur Unterstützung von Compliance-Audits. Es ersetzt keine professionelle Rechts- oder Compliance-Beratung. Die Ergebnisse der automatisierten Prüfungen müssen von qualifiziertem Fachpersonal verifiziert werden.

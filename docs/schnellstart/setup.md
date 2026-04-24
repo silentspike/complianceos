@@ -43,7 +43,7 @@ Wenn Sie ComplianceOS über `localhost` oder `127.0.0.1` öffnen, wird der **Aut
 
 ### Flow 2: Remote-Zugriff (Server-IP)
 
-Wenn Sie ComplianceOS über eine Server-IP oder einen Hostnamen erreichen (z.B. `http://10.0.0.42:8001`), wird der **Manuelle-Code-Flow** verwendet:
+Wenn Sie ComplianceOS über eine Server-IP oder einen Hostnamen erreichen (z.B. `http://192.0.2.42:8001`), wird der **Manuelle-Code-Flow** verwendet:
 
 1. Klicken Sie auf **"Mit Claude verbinden"**
 2. Es öffnet sich ein neues Fenster/Tab zu `claude.ai`
