@@ -62,10 +62,15 @@ extra_css:
 nav:
   - Start:
     - Willkommen: index.md
+    - Architektur: architecture.md
+    - Sample Audit Report: samples/sample-audit-report.html
     - schnellstart/installation.md
     - schnellstart/setup.md
     - schnellstart/erste-schritte.md
     - schnellstart/datenschutz.md
+  - Fuer Entscheider:
+    - Zielgruppen: business/for-who.md
+    - ROI-Szenarien: business/roi.md
   - Bedienung:
     - bedienung/dashboard.md
     - bedienung/audits.md

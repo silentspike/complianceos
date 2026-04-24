@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>ComplianceOS - Sample Audit Report (Synthetic)</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --surface: #1e293b;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --sapphire: #3b82f6;
+    --emerald: #10b981;
+    --ruby: #ef4444;
+    --amber: #f59e0b;
+    --border: #334155;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.6;
+  }
+  .disclaimer {
+    background: var(--amber);
+    color: #1a1a1a;
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  h1, h2, h3 { color: var(--text); }
+  h1 { border-bottom: 2px solid var(--sapphire); padding-bottom: 0.5rem; }
+  h2 { margin-top: 2rem; color: var(--sapphire); }
+  .meta {
+    background: var(--surface);
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+    border-left: 4px solid var(--sapphire);
+  }
+  .meta dt { font-weight: 600; color: var(--muted); display: inline-block; min-width: 180px; }
+  .meta dd { display: inline; margin: 0; }
+  .meta dl > div { margin: 0.25rem 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background: var(--surface);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  th, td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+  th { background: #111827; color: var(--muted); font-weight: 600; }
+  .status-pass { color: var(--emerald); font-weight: 600; }
+  .status-fail { color: var(--ruby); font-weight: 600; }
+  .status-observation { color: var(--amber); font-weight: 600; }
+  .finding {
+    background: var(--surface);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+    border-left: 4px solid var(--border);
+  }
+  .finding.pass { border-left-color: var(--emerald); }
+  .finding.fail { border-left-color: var(--ruby); }
+  .finding.observation { border-left-color: var(--amber); }
+  .finding h3 { margin-top: 0; }
+  .tag {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    background: var(--border);
+    color: var(--text);
+    margin-right: 0.5rem;
+  }
+  code {
+    background: #111827;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    font-family: "JetBrains Mono", "IBM Plex Mono", monospace;
+    font-size: 0.9em;
+  }
+  .evidence {
+    background: #111827;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    border-left: 3px solid var(--muted);
+    font-family: "JetBrains Mono", "IBM Plex Mono", monospace;
+    font-size: 0.85rem;
+    white-space: pre-wrap;
+    margin: 0.5rem 0;
+    color: var(--muted);
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="disclaimer">
+  ILLUSTRATIVE SAMPLE - Synthetic data. Actual reports are tailored to the
+  customer environment, use real control-matrix entries, and include full
+  evidence-chain with confidence scores. This document is not a real audit
+  and must not be used as compliance evidence.
+</div>
+
+<h1>Compliance Audit Report</h1>
+
+<div class="meta">
+  <dl>
+    <div><dt>Organisation:</dt> <dd>Acme Example GmbH (fictitious)</dd></div>
+    <div><dt>Scope:</dt> <dd>ISMS-Gueltigkeitsbereich: IT-Infrastruktur Hauptsitz Berlin</dd></div>
+    <div><dt>Standards:</dt> <dd>ISO/IEC 27001:2022, NIS2 (EU 2022/2555)</dd></div>
+    <div><dt>Audit-Typ:</dt> <dd>Interner Zwischen-Audit (Domain-Subset)</dd></div>
+    <div><dt>Durchgefuehrt am:</dt> <dd>2026-Q2</dd></div>
+    <div><dt>Auditor:</dt> <dd>Interne ISB (synthetisch)</dd></div>
+    <div><dt>ComplianceOS-Version:</dt> <dd>1.0.1</dd></div>
+  </dl>
+</div>
+
+<h2>Executive Summary</h2>
+
+<p>
+  Dieser Teil-Audit betrachtet drei Kern-Controls aus den Domains CRYPTO,
+  ACCESS und BACKUP. Von drei geprueften Controls erfuellen zwei die
+  Anforderungen (<strong class="status-pass">PASS</strong>), ein Control
+  zeigt eine Abweichung (<strong class="status-observation">Observation</strong>).
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Control</th>
+      <th>Domain</th>
+      <th>Standard-Ref</th>
+      <th>Status</th>
+      <th>Confidence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>CRYPTO-001</code></td>
+      <td>CRYPTO</td>
+      <td>ISO 27001 A.8.24</td>
+      <td class="status-pass">PASS</td>
+      <td>92 %</td>
+    </tr>
+    <tr>
+      <td><code>ACCESS-003</code></td>
+      <td>ACCESS</td>
+      <td>ISO 27001 A.8.5</td>
+      <td class="status-pass">PASS</td>
+      <td>88 %</td>
+    </tr>
+    <tr>
+      <td><code>BACKUP-002</code></td>
+      <td>BACKUP</td>
+      <td>ISO 27001 A.8.13, NIS2 Annex Art. 21 (2)(c)</td>
+      <td class="status-observation">Observation</td>
+      <td>85 %</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Detaillierte Findings</h2>
+
+<div class="finding pass">
+  <h3>
+    <span class="tag">CRYPTO-001</span>
+    TLS 1.3 fuer alle oeffentlich erreichbaren Dienste
+  </h3>
+  <p><strong>Status:</strong> <span class="status-pass">PASS</span> &middot; Confidence 92 % &middot; ISO 27001 Annex A.8.24</p>
+  <p>
+    Alle in den Audit-Unterlagen aufgefuehrten extern erreichbaren Dienste
+    verwenden TLS 1.3 (gemaess geliefertem Nginx-Config-Export). TLS 1.0
+    und 1.1 sind deaktiviert. Zertifikate sind gueltig und nutzen moderne
+    Cipher-Suites.
+  </p>
+  <p><strong>Evidence:</strong></p>
+  <div class="evidence">ssl_protocols TLSv1.3 TLSv1.2;
+ssl_ciphers 'ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:...';
+ssl_prefer_server_ciphers off;
+-- aus Dokument "Acme_Nginx_Config_2026Q2.txt", Zeile 47-49</div>
+  <p><strong>Empfehlung:</strong> Keine Korrekturmassnahmen erforderlich. Weiterhin regelmaessige Ueberpruefung der Cipher-Suite mit <code>testssl.sh</code> oder <code>qualys</code> empfohlen.</p>
+</div>
+
+<div class="finding pass">
+  <h3>
+    <span class="tag">ACCESS-003</span>
+    Multi-Faktor-Authentifizierung (MFA) fuer administrative Zugaenge
+  </h3>
+  <p><strong>Status:</strong> <span class="status-pass">PASS</span> &middot; Confidence 88 % &middot; ISO 27001 Annex A.8.5</p>
+  <p>
+    MFA ist fuer alle administrativen Accounts (Domain-Admin, DB-Admin,
+    Cloud-Konsolen) aktiviert. Als zweiter Faktor kommen TOTP-Apps
+    (Google Authenticator, Aegis) und Hardware-Tokens (YubiKey 5C) zum
+    Einsatz. SMS-basierte MFA wurde 2025-Q4 abgekuendigt.
+  </p>
+  <p><strong>Evidence:</strong></p>
+  <div class="evidence">Auszug "Acme_IAM_Policy_2026_v3.pdf", Abschnitt 4.2:
+"Fuer alle Accounts mit administrativen Berechtigungen ist MFA verpflichtend.
+Zulaessige Zweitfaktoren: TOTP (RFC 6238) oder FIDO2-Hardware-Token.
+SMS wird seit 2025-12 nicht mehr akzeptiert (Ref: BSI TR-02102-1, §5.6)."</div>
+  <p><strong>Empfehlung:</strong> Keine Korrekturmassnahmen. Fuer v1.1 ggf. Phishing-resistente FIDO2-Only-Policy erwaegen.</p>
+</div>
+
+<div class="finding observation">
+  <h3>
+    <span class="tag">BACKUP-002</span>
+    3-2-1 Backup-Strategie mit regelmaessigem Restore-Test
+  </h3>
+  <p><strong>Status:</strong> <span class="status-observation">Observation</span> &middot; Confidence 85 % &middot; ISO 27001 A.8.13, NIS2 Annex Art. 21 (2)(c)</p>
+  <p>
+    Die 3-2-1-Strategie (3 Kopien, 2 Medien, 1 offsite) ist dokumentiert
+    und technisch implementiert (siehe Backup-Policy und Veeam-Konfig).
+    Jedoch: Der letzte dokumentierte vollstaendige Restore-Test liegt
+    11 Monate zurueck. ISO 27001 und die interne Policy fordern einen
+    Restore-Test "mindestens einmal jaehrlich, besser quartalsweise".
+  </p>
+  <p><strong>Evidence:</strong></p>
+  <div class="evidence">Dokument "Acme_Backup_Restore_Test_Log.xlsx":
+-- letzter Eintrag: 2025-05-12, Restore eines Exchange-Mailbox-Datensatzes
+-- davor: 2024-11-03, Full-Restore SAP-DB in Sandbox
+-- 2024 hatte 4 dokumentierte Tests, 2025 nur 1
+
+Acme_Backup_Policy_v2.1.pdf, §3.4:
+"Restore-Tests werden quartalsweise durchgefuehrt und dokumentiert."</div>
+  <p><strong>Empfehlung:</strong></p>
+  <ul>
+    <li>Kurzfristig (bis Ende Monat): Restore-Test Q2/2026 durchfuehren und dokumentieren</li>
+    <li>Mittelfristig (Q3/2026): Review-Termin im Betriebs-Jahresplan verankern</li>
+    <li>Langfristig: Automatisiertes Restore-Test-Skript (naechster Audit-Zyklus)</li>
+  </ul>
+  <p><strong>Severity:</strong> Observation (keine akute Bedrohung, aber Abweichung von der eigenen Policy).</p>
+</div>
+
+<h2>Metadaten</h2>
+
+<p>
+  <strong>Gesamtanzahl AUDIT-CHECKs im Scope:</strong> 47<br>
+  <strong>Davon automatisiert:</strong> 31 (66 %)<br>
+  <strong>Davon hybrid (automatisiert + Interview):</strong> 9 (19 %)<br>
+  <strong>Davon manuell (Interview + Dokumenten-Review):</strong> 7 (15 %)
+</p>
+<p>
+  Dieser Report wurde aus ComplianceOS generiert. Die Evidence-Zitate
+  stammen aus vom Kunden hochgeladenen Dokumenten; die Standard-Referenzen
+  aus der kuratierten Control-Matrix (keine LLM-Generierung).
+</p>
+
+<footer>
+  <p>
+    <strong>Sample-Report &middot; Synthetic data &middot; Illustrative purpose only.</strong><br>
+    Generiert am 2026-04-24 &middot; ComplianceOS v1.0.1<br>
+    Fuer Evaluation-Anfragen: <a href="https://github.com/silentspike/complianceos/issues/new?template=evaluation_request.yml">Evaluation Request</a>
+  </p>
+</footer>
+
+</body>
+</html>
