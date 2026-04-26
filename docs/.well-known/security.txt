@@ -1,14 +1,12 @@
 # RFC 9116 — security.txt for silentspike / ComplianceOS
 #
-# Status (2026-04-26): channel-setup in progress.
-# The encrypted email and PGP key fields will be filled in once provisioned.
-# Until then, please use the GitHub Security Advisories channel listed below.
-# Tracking issue: https://github.com/silentspike/complianceos/issues/4
+# We do not operate a separate security mailbox. All vulnerability reports
+# go through GitHub Security Advisories (private, authenticated, integrated
+# with our triage workflow). See SECURITY.md for the full disclosure
+# policy and SLAs.
 
 Contact: https://github.com/silentspike/complianceos/security/advisories/new
-# Contact: mailto:security@silentspike.example  # pending — see issue #4
 Expires: 2027-04-26T00:00:00Z
 Preferred-Languages: en, de
 Canonical: https://silentspike.github.io/complianceos/.well-known/security.txt
 Policy: https://github.com/silentspike/complianceos/blob/main/SECURITY.md
-# Encryption: https://keys.openpgp.org/vks/v1/by-fingerprint/<pending>
