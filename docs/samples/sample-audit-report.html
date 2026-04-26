@@ -27,10 +27,32 @@
   .disclaimer {
     background: var(--amber);
     color: #1a1a1a;
-    padding: 1rem 1.25rem;
+    padding: 1.25rem 1.5rem;
+    border: 3px solid #b45309;
     border-radius: 6px;
     margin-bottom: 1.5rem;
     font-weight: 600;
+    box-shadow: 0 4px 12px rgba(180, 83, 9, 0.25);
+  }
+  .disclaimer .label {
+    display: block;
+    font-size: 1.1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    padding-bottom: 0.35rem;
+  }
+  @media print {
+    .disclaimer {
+      background: #fde68a !important;
+      color: #000 !important;
+      border: 3px solid #000 !important;
+      box-shadow: none !important;
+      page-break-after: avoid;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
   }
   h1, h2, h3 { color: var(--text); }
   h1 { border-bottom: 2px solid var(--sapphire); padding-bottom: 0.5rem; }
@@ -110,11 +132,15 @@
 </head>
 <body>
 
-<div class="disclaimer">
-  ILLUSTRATIVE SAMPLE - Synthetic data. Actual reports are tailored to the
-  customer environment, use real control-matrix entries, and include full
-  evidence-chain with confidence scores. This document is not a real audit
-  and must not be used as compliance evidence.
+<div class="disclaimer" role="note" aria-label="Synthetic example notice">
+  <span class="label">⚠ Synthetic example — not a real audit</span>
+  This report is an illustrative demonstration. <strong>Acme Example GmbH</strong>
+  is a fictitious organisation, all findings, evidence quotes, control results,
+  numerical values and KPIs are synthetic. Actual reports are tailored to a
+  specific customer environment, use the real control-matrix, and include the
+  full evidence chain with confidence scores. <strong>This document must not
+  be used as compliance evidence, audit deliverable, or for regulatory
+  reporting.</strong>
 </div>
 
 <h1>Compliance Audit Report</h1>
