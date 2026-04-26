@@ -137,10 +137,9 @@ Für eine detaillierte technische Erklärung der Audit-Engine und Bewertungsmeth
 
 | Seite | Beschreibung |
 |-------|-------------|
-| [Installation](schnellstart/installation.md) | Voraussetzungen, pip- und Docker-Installation |
+| [Installation](schnellstart/installation.md) | EULA-Eval-Flow, Voraussetzungen, On-Premise-Deployment |
 | [Claude-Setup](schnellstart/setup.md) | OAuth-Authentifizierung mit Claude AI |
 | [Erste Schritte](schnellstart/erste-schritte.md) | Projekt anlegen, ersten Audit durchführen |
-| [Docker](schnellstart/docker.md) | Docker Compose Konfiguration und Betrieb |
 | [Datenschutz](schnellstart/datenschutz.md) | Welche Daten wohin fliessen, lokale Verarbeitung |
 
 ### Bedienung
