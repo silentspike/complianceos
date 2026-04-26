@@ -198,7 +198,8 @@ Für eine detaillierte technische Erklärung der Audit-Engine und Bewertungsmeth
 | **Standards** | 9 (ISO 27001, 22301, 27005, 27017, 27018, 27035, NIS2, BSI, DSGVO) |
 | **Controls** | 135 technische Prüfpunkte |
 | **Domains** | 12 Sicherheitsbereiche |
-| **AUDIT-CHECKs** | 2.042 semantische Anforderungen |
+| **AUDIT-CHECKs** | 2.285 semantische Anforderungen |
+| **Sprachen** | Deutsch, Englisch (per-Request, umschaltbar) |
 | **Deployment** | Docker Compose oder pip install |
 | **Datenbank** | SQLite (WAL-Modus, lokal) |
 | **Lizenz** | Proprietary (EULA) |

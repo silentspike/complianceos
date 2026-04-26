@@ -266,7 +266,7 @@ Die Knowledge Base ist das Fundament aller Audits. Sie enthält das gesamte norm
 |----------|--------|-------------|
 | **Standards** | 9 | ISO 27001, ISO 22301, ISO 27005, ISO 27017, ISO 27018, ISO 27035, NIS2, BSI IT-Grundschutz, DSGVO |
 | **Controls** | 135 | Technische Prüfpunkte, gruppiert in 12 Sicherheitsdomains |
-| **AUDIT-CHECKs** | 2.042 | Atomare Prüfanweisungen pro Control — die konkreten Fragen die ein Auditor stellen würde |
+| **AUDIT-CHECKs** | 2.285 | Atomare Prüfanweisungen pro Control — die konkreten Fragen die ein Auditor stellen würde |
 | **Domains** | 12 | Sicherheitsbereiche (ACCESS, BACKUP, BCP, CONFIG, CRYPTO, INCIDENT, LOGGING, MALWARE, NETWORK, PII, SUPPLY, VULN) |
 
 Die Knowledge Base wird beim Start des Servers geladen und ist vollständig lokal gespeichert. Sie benötigt keinen Internetzugang.
@@ -428,7 +428,7 @@ ComplianceOS prüft gegen folgende Standards:
 
 ### 135 Controls, 12 Domains
 
-Jeder Control gehört zu genau einer Domain und wird durch mehrere AUDIT-CHECKs geprüft. Insgesamt gibt es 2.042 AUDIT-CHECKs — die atomaren Prüfpunkte die bei jedem Audit durchlaufen werden.
+Jeder Control gehört zu genau einer Domain und wird durch mehrere AUDIT-CHECKs geprüft. Insgesamt gibt es 2.285 AUDIT-CHECKs — die atomaren Prüfpunkte die bei jedem Audit durchlaufen werden.
 
 ### Verifikationsmethoden
 
