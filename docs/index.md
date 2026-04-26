@@ -73,30 +73,23 @@ Netzwerk-Visualisierung der Überschneidungen zwischen allen 9 Standards
 
 ---
 
-## Schnellstart
+## Evaluation
 
-=== "Docker (empfohlen)"
+ComplianceOS is proprietary software under a commercial EULA — there is no
+public binary download. Qualified evaluators receive a private deployment
+package and an activation code on request:
 
-    ```bash
-    git clone https://github.com/silentspike/complianceos.git
-    cd complianceos
-    docker compose up -d
-    ```
+1. Open an [Evaluation Request](https://github.com/silentspike/complianceos/issues/new?template=evaluation_request.yml)
+2. We respond within two business days with a scoped evaluation
+3. You deploy the delivered package on your own infrastructure (Linux x86_64,
+   1 GB RAM, no outbound internet required for the core engine)
 
-    Dann öffnen Sie [http://localhost:8001](http://localhost:8001) im Browser.
+Full installation flow: see [Installation](schnellstart/installation.md).
 
-=== "pip"
-
-    ```bash
-    git clone https://github.com/silentspike/complianceos.git
-    cd complianceos
-    python -m venv .venv && source .venv/bin/activate
-    pip install -e ".[ai,docs]"
-    make dev
-    ```
-
-!!! tip "Erster Schritt nach dem Start"
-    Nach dem Start werden Sie auf die **Setup-Seite** weitergeleitet, um Claude AI zu verbinden. Danach legen Sie ein Projekt an und führen Ihren ersten Audit durch. Folgen Sie der Anleitung unter [Erste Schritte](schnellstart/erste-schritte.md).
+!!! tip "Before you request an evaluation"
+    The complete operating manual ([Bedienung](bedienung/dashboard.md)) with
+    24 screenshots and 5 demo videos is publicly available — that is usually
+    enough material for a procurement or security committee to assess fit.
 
 ---
 
@@ -144,10 +137,9 @@ Für eine detaillierte technische Erklärung der Audit-Engine und Bewertungsmeth
 
 | Seite | Beschreibung |
 |-------|-------------|
-| [Installation](schnellstart/installation.md) | Voraussetzungen, pip- und Docker-Installation |
+| [Installation](schnellstart/installation.md) | EULA-Eval-Flow, Voraussetzungen, On-Premise-Deployment |
 | [Claude-Setup](schnellstart/setup.md) | OAuth-Authentifizierung mit Claude AI |
 | [Erste Schritte](schnellstart/erste-schritte.md) | Projekt anlegen, ersten Audit durchführen |
-| [Docker](schnellstart/docker.md) | Docker Compose Konfiguration und Betrieb |
 | [Datenschutz](schnellstart/datenschutz.md) | Welche Daten wohin fliessen, lokale Verarbeitung |
 
 ### Bedienung
