@@ -62,7 +62,9 @@ extra_css:
 nav:
   - Start:
     - Willkommen: index.md
-    - Architektur: architecture.md
+    - Architektur:
+      - Uebersicht: architecture.md
+      - Control-Matrix Workflow: architecture/control-matrix-workflow.md
     - Sample Audit Report: samples/sample-audit-report.html
     - schnellstart/installation.md
     - schnellstart/setup.md

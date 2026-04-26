@@ -150,3 +150,8 @@ on-premise. Die im oeffentlichen Repo beigefuegte Control-Matrix
 Matrizen koennen zur Laufzeit via Umgebungsvariable
 `COMPLIANCEOS_CONTROL_MATRIX=/pfad/zu/kunden-matrix.yaml` eingebunden werden
 ohne Rebuild.
+
+Eine ausfuehrliche Beschreibung des Sync-Prozesses (Toolkit -> Public-Binary
+-> Customer-Override), des Embed-Patterns und ein Beispiel fuer eigene
+Custom-Controls findet sich auf der Seite
+[Control-Matrix Workflow](architecture/control-matrix-workflow.md).
