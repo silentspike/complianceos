@@ -74,7 +74,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - 9 compliance standards: ISO 27001, ISO 22301, ISO 27005, ISO 27017, ISO 27018, ISO 27035, NIS2, BSI IT-Grundschutz, DSGVO
-- 135 audit controls across 12 domains with 2,246 semantic AUDIT-CHECKs
+- 135 audit controls across 12 domains with 2,285 semantic AUDIT-CHECKs
 - Chat-first interface with Claude AI integration for compliance guidance
 - Automated audit engine with parallel check execution
 - Intent classification system (9 intents) with built-in responses

@@ -86,7 +86,7 @@ Zeigt vier Kennzahlen der integrierten Wissensbasis:
 |----------|-------------|
 | **Standards** | Anzahl der unterstützten Standards (9) |
 | **Controls** | Technische Prüfpunkte (135) |
-| **AUDIT-CHECKs** | Semantische Anforderungen (2.042) |
+| **AUDIT-CHECKs** | Semantische Anforderungen (2.285) |
 | **Domains** | Sicherheitsbereiche (12) |
 
 ---

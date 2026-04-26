@@ -25,7 +25,7 @@ Der Chat-Assistent hat Zugriff auf:
 - Ihre aktuellen Audit-Ergebnisse und Findings
 - Alle 9 unterstützten Standards und deren Anforderungen
 - Ihre Projekt-Einstellungen und aktiven Standards
-- Die Knowledge-Base mit 135 Controls und 2.042 AUDIT-CHECKs
+- Die Knowledge-Base mit 135 Controls und 2.285 AUDIT-CHECKs
 
 ---
 

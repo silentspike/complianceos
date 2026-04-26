@@ -40,7 +40,7 @@ ComplianceOS richtet sich an IT-Sicherheitsbeauftragte, Compliance-Manager und C
 
 ### Kernfunktionen
 
-- **Audit-Engine** — 135 Controls in 12 Domains mit 2.246 semantischen Pruefpunkten, automatische und manuelle Checks
+- **Audit-Engine** — 135 Controls in 12 Domains mit 2.285 semantischen Pruefpunkten, automatische und manuelle Checks
 - **KI-Chat** — Compliance-Fragen stellen, Findings analysieren, Empfehlungen erhalten (Claude AI, optional)
 - **Findings-Management** — Severity-Klassifikation, Status-Workflow, Zuweisung, Deadlines
 - **Remediation-Tracking** — Massnahmen verfolgen, Verantwortliche zuweisen, Fortschritt messen
