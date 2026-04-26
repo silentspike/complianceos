@@ -142,6 +142,27 @@ Für eine detaillierte technische Erklärung der Audit-Engine und Bewertungsmeth
 | [Erste Schritte](schnellstart/erste-schritte.md) | Projekt anlegen, ersten Audit durchführen |
 | [Datenschutz](schnellstart/datenschutz.md) | Welche Daten wohin fliessen, lokale Verarbeitung |
 
+### Architektur
+
+| Seite | Beschreibung |
+|-------|-------------|
+| [Architektur-Uebersicht](architecture.md) | Pipeline, Domains, Standards, Deployment-Modell |
+| [Control-Matrix Workflow](architecture/control-matrix-workflow.md) | SSOT-Topologie, Embed-Pattern, Customer-Override via Env-Var |
+| [Sample Audit Report](samples/sample-audit-report.html) | Synthetisches Beispiel-Report (Acme Example GmbH) |
+
+### Fuer Entscheider
+
+| Seite | Beschreibung |
+|-------|-------------|
+| [Zielgruppen](business/for-who.md) | 5 Profile mit Regulierungs-Bezug |
+| [ROI-Szenarien](business/roi.md) | 6 illustrative Modellrechnungen (Mittelstand, Ministerium, KRITIS, Krankenhaus, Finanz, Automotive) |
+| [NIS2](business/regulations/nis2.md) | Article 21, 24h/72h-Reporting, KRITIS-Dachgesetz |
+| [B3S Krankenhaus + KHZG](business/regulations/b3s-krankenhaus.md) | DKG/BSI-Standard, KHZG-Foerdertatbestaende |
+| [BAIT / VAIT / ZAIT](business/regulations/bait-vait-zait.md) | BaFin-Aufsichtsanforderungen IT |
+| [DORA](business/regulations/dora.md) | EU-Verordnung 2022/2554, fuenf Saeulen, TLPT |
+| [BSI IT-Grundschutz](business/regulations/bsi-it-grundschutz.md) | Methodik, Bausteine, Schutzbedarfsfeststellung |
+| [TISAX](business/regulations/tisax.md) | VDA-ISA Module, Level 2/3, OEM-Zusatzklauseln |
+
 ### Bedienung
 
 | Seite | Beschreibung |
