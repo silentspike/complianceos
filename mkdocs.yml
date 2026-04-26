@@ -71,6 +71,13 @@ nav:
   - Fuer Entscheider:
     - Zielgruppen: business/for-who.md
     - ROI-Szenarien: business/roi.md
+    - Regulierungen:
+      - NIS2: business/regulations/nis2.md
+      - B3S Krankenhaus + KHZG: business/regulations/b3s-krankenhaus.md
+      - BAIT / VAIT / ZAIT: business/regulations/bait-vait-zait.md
+      - DORA: business/regulations/dora.md
+      - BSI IT-Grundschutz: business/regulations/bsi-it-grundschutz.md
+      - TISAX: business/regulations/tisax.md
   - Bedienung:
     - bedienung/dashboard.md
     - bedienung/audits.md
