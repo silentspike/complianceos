@@ -18,7 +18,7 @@ ComplianceOS unterstützt 9 internationale Sicherheits- und Compliance-Standards
 | BSI IT-Grundschutz | 2023 | Framework | IT-Sicherheit (DACH-spezifisch) | 16 |
 | DSGVO | 2016/679 | EU-Verordnung | Datenschutz | 10 |
 
-**Gesamt:** 135 Controls, verteilt auf 12 Sicherheitsdomains, geprüft durch 2.042 AUDIT-CHECKs.
+**Gesamt:** 135 Controls, verteilt auf 12 Sicherheitsdomains, geprüft durch 2.285 AUDIT-CHECKs.
 
 ---
 

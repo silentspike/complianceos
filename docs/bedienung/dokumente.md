@@ -93,6 +93,25 @@ Der vollständige extrahierte Textinhalt wird angezeigt. Bei PDF- und Word-Dokum
 
 ---
 
+## Gap-Analyse
+
+ComplianceOS analysiert hochgeladene Dokumente automatisch auf Luecken gegenueber den 135 Controls. Die Gap-Analyse nutzt kuratierte Keywords (`doc_keywords`) aus der Control-Matrix sowie extrahierte Begriffe aus Control-Namen und -Beschreibungen.
+
+### Ergebnis
+
+| Feld | Beschreibung |
+|------|-------------|
+| **Abgedeckte Controls** | Controls deren Keywords im Dokument gefunden wurden |
+| **Luecken** | Controls deren Keywords im Dokument fehlen |
+| **Abdeckungsquote** | Prozentualer Anteil der abgedeckten Controls |
+
+Die Analyse laeuft pro Dokument und als Aggregation ueber alle Dokumente eines Projekts. So erkennen Sie auf einen Blick, welche Compliance-Themen durch Ihre bestehende Dokumentation abgedeckt sind und wo Handlungsbedarf besteht.
+
+!!! tip "Gap-Analyse optimieren"
+    Je vollstaendiger Ihre Dokumente sind, desto aussagekraeftiger ist die Gap-Analyse. Laden Sie alle relevanten Policies, Betriebshandbuecher und Konfigurationsdokumente hoch.
+
+---
+
 ## Dokument löschen
 
 1. Öffnen Sie das Dokument in der Detailansicht

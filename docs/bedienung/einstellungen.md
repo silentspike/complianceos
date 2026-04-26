@@ -168,7 +168,7 @@ Zeigt technische Informationen über die ComplianceOS-Installation:
 | **Datenbankgrösse** | Aktuelle Grösse der SQLite-Datenbank |
 | **Standards** | Anzahl der geladenen Standards (9) |
 | **Controls** | Anzahl technischer Prüfpunkte (135) |
-| **AUDIT-CHECKs** | Anzahl semantischer Anforderungen (2.042) |
+| **AUDIT-CHECKs** | Anzahl semantischer Anforderungen (2.285) |
 | **Domains** | Anzahl Sicherheitsbereiche (12) |
 
 ---

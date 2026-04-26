@@ -13,7 +13,7 @@ Dieses Glossar erklärt die wichtigsten Begriffe die in ComplianceOS und der Com
 : Systematische, unabhängige Prüfung gegen definierte Anforderungen (Standards, Richtlinien, Controls). ComplianceOS unterscheidet Vollaudits (alle 135 Controls) und Domain-Audits (eine Domain).
 
 **AUDIT-CHECK**
-: Atomarer Prüfpunkt innerhalb eines Controls. Jeder Control besteht aus mehreren AUDIT-CHECKs die bei der Prüfung einzeln bewertet werden. ComplianceOS enthält 2.042 AUDIT-CHECKs.
+: Atomarer Prüfpunkt innerhalb eines Controls. Jeder Control besteht aus mehreren AUDIT-CHECKs die bei der Prüfung einzeln bewertet werden. ComplianceOS enthält 2.285 AUDIT-CHECKs.
 
 ## B
 
