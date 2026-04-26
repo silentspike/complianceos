@@ -129,7 +129,7 @@ Der Confidence-Wert (0-100%) zeigt wie zuverlässig die automatische Bewertung e
 
 Der Audit läuft im Hintergrund weiter, auch wenn Sie den Browser-Tab schliessen. Die Ergebnisse finden Sie anschliessend im Audit-Verlauf.
 
-### Woher kommen die 2.042 AUDIT-CHECKs?
+### Woher kommen die 2.285 AUDIT-CHECKs?
 
 Die AUDIT-CHECKs sind das Ergebnis einer systematischen Analyse aller 9 Standards. Jeder Artikel, jede Klausel und jeder Baustein wurde in atomare, technisch prüfbare Anforderungen zerlegt. Beispiel: Ein einzelner ISO-Control wie "Kryptografie" (A.8.24) wird in 5-15 konkrete Prüffragen aufgelöst (TLS-Version, Algorithmen, Schlüsselmanagement etc.).
 
