@@ -14,7 +14,7 @@ Kontrolle ueber ihren Audit-Datenfluss behalten.
 
 **Primaere Regulierungen:**
 
-- NIS2 (EU-Richtlinie 2022/2555)
+- NIS2 (EU-Richtlinie 2022/2555) — [Detailseite](regulations/nis2.md)
 - BSI KRITIS-Verordnung (KritisV)
 - BSI IT-Sicherheitsgesetz 2.0
 
@@ -38,7 +38,7 @@ Kontrolle ueber ihren Audit-Datenfluss behalten.
 
 **Primaere Regulierungen:**
 
-- B3S Krankenhaus (Branchenspezifischer Sicherheitsstandard)
+- B3S Krankenhaus (Branchenspezifischer Sicherheitsstandard) — [Detailseite](regulations/b3s-krankenhaus.md)
 - DSGVO (fuer Patientendaten)
 - KHZG-relevante IT-Sicherheits-Foerdertatbestaende
 - ISO 27001 / 27799 (Medizinische Informatik)
@@ -62,10 +62,10 @@ Kontrolle ueber ihren Audit-Datenfluss behalten.
 
 **Primaere Regulierungen:**
 
-- **BAIT** (Bankaufsichtliche Anforderungen an die IT, BaFin)
-- **VAIT** (Versicherungsaufsichtliche Anforderungen an die IT)
-- **ZAIT** (Zahlungsdiensteaufsichtliche Anforderungen)
-- **DORA** (EU 2022/2554, Digital Operational Resilience Act)
+- **BAIT** (Bankaufsichtliche Anforderungen an die IT, BaFin) — [Detailseite](regulations/bait-vait-zait.md)
+- **VAIT** (Versicherungsaufsichtliche Anforderungen an die IT) — [Detailseite](regulations/bait-vait-zait.md)
+- **ZAIT** (Zahlungsdiensteaufsichtliche Anforderungen) — [Detailseite](regulations/bait-vait-zait.md)
+- **DORA** (EU 2022/2554, Digital Operational Resilience Act) — [Detailseite](regulations/dora.md)
 - PCI DSS (Karten-Akzeptanz)
 
 **Typische Anforderungen:**
@@ -87,7 +87,7 @@ Kontrolle ueber ihren Audit-Datenfluss behalten.
 
 **Primaere Regulierungen:**
 
-- **BSI IT-Grundschutz** (Kompendium 2023)
+- **BSI IT-Grundschutz** (Kompendium 2023) — [Detailseite](regulations/bsi-it-grundschutz.md)
 - BSI Mindeststandards fuer IT des Bundes
 - IT-Sicherheitsgesetz 2.0
 - Informationsfreiheitsgesetz-Implikationen
@@ -112,10 +112,10 @@ Kontrolle ueber ihren Audit-Datenfluss behalten.
 **Primaere Regulierungen:**
 
 - **ISO/IEC 27001** (internationale Zertifizierung)
-- **TISAX** (Automotive-Supply-Chain)
+- **TISAX** (Automotive-Supply-Chain) — [Detailseite](regulations/tisax.md)
 - DSGVO
 - Kunden-spezifische SLA-Anforderungen
-- Branchenspezifisch: NIS2 (wenn kritische Einrichtung)
+- Branchenspezifisch: NIS2 (wenn kritische Einrichtung) — [Detailseite](regulations/nis2.md)
 
 **Typische Anforderungen:**
 
