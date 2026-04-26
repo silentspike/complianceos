@@ -10,38 +10,19 @@
 
 ## Reporting a Vulnerability
 
-**Please do NOT report security vulnerabilities through public GitHub issues.**
+**Please do NOT report security vulnerabilities through public GitHub
+issues.**
 
-We accept security reports through three channels (in order of preference):
+ComplianceOS uses **GitHub Security Advisories** as the single channel
+for responsible disclosure. Advisories are private, authenticated, and
+integrated with our triage workflow — we do not operate a separate
+mailbox or PGP key.
 
-### 1. GitHub Security Advisories (recommended)
+[Open a private advisory](https://github.com/silentspike/complianceos/security/advisories/new)
 
-[Open a private advisory](https://github.com/silentspike/complianceos/security/advisories/new).
-Authenticated, confidential, and integrated with our triage workflow.
-
-### 2. Encrypted email
-
-> **Status (2026-04-26): channel-setup in progress.** The dedicated mailbox
-> and PGP key are being provisioned. Until the values below are populated,
-> please use Channel 1 (GitHub Security Advisories). This page will be
-> updated and the related tracking issue
-> ([#4](https://github.com/silentspike/complianceos/issues/4)) closed once
-> the channel is live.
-
-| Field | Value |
-|-------|-------|
-| Address | `<security@silentspike — pending>` |
-| PGP fingerprint | `<pending — to be published on keys.openpgp.org>` |
-| PGP key URL | `<pending>` |
-
-When the channel goes live the encrypted email path will be RFC-9116
-discoverable via [`/.well-known/security.txt`](docs/.well-known/security.txt).
-
-### 3. security.txt
-
-Machine-readable contact information per RFC 9116 lives at
-[`docs/.well-known/security.txt`](docs/.well-known/security.txt). The same
-file is published at the canonical URL once the documentation site is live.
+A machine-readable contact record per RFC 9116 lives at
+[`docs/.well-known/security.txt`](docs/.well-known/security.txt). It
+points at the same advisory URL as above.
 
 ---
 
@@ -77,8 +58,9 @@ explained transparently and only when strictly necessary.
 
 We follow a coordinated disclosure model:
 
-1. Report the vulnerability privately via one of the channels above
-2. Allow us reasonable time to address the issue before public disclosure
+1. Report the vulnerability privately via the advisory channel above
+2. Allow us reasonable time to address the issue before public
+   disclosure
 3. Avoid exploiting the vulnerability beyond what is necessary to
    demonstrate impact
 4. Do not access, modify, or delete data that is not your own
@@ -87,7 +69,7 @@ We commit to:
 
 - Acknowledging receipt within the SLA above
 - Keeping the reporter informed of progress at meaningful milestones
-- Crediting reporters in our changelog and the published advisory (unless
+- Crediting reporters in the published advisory and changelog (unless
   anonymity is requested)
 - Not pursuing legal action against good-faith security researchers who
   follow this policy

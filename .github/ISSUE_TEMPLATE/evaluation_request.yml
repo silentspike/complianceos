@@ -100,15 +100,6 @@ body:
       required: true
 
   - type: input
-    id: contact_email
-    attributes:
-      label: Kontakt-Email
-      description: Dienstliche Email-Adresse fuer die Evaluation-Korrespondenz
-      placeholder: "vorname.nachname@organisation.de"
-    validations:
-      required: true
-
-  - type: input
     id: contact_role
     attributes:
       label: Ihre Rolle
