@@ -1,13 +1,16 @@
 # ROI-Szenarien (illustrativ / synthetisch)
 
-> **Wichtig:** Die folgenden drei Szenarien sind **illustrative Modell-
+> **Wichtig:** Die folgenden sechs Szenarien sind **illustrative Modell-
 > rechnungen** basierend auf typischen Enterprise-Audit-Zyklen. Tatsaechliche
 > Einsparungen haengen von der organisatorischen Komplexitaet, der
 > vorhandenen Compliance-Reife und der Integrations-Tiefe ab. Die Zahlen
 > sind keine Zusage oder Garantie.
 
-Die drei Szenarien decken die typischen Groessen-Cluster ab: Mittelstand,
-Grossunternehmen/Ministerium, KRITIS-Einzelbetrieb.
+Die sechs Szenarien decken die typischen Groessen-Cluster und
+Branchen-Profile ab: Mittelstand (ISO 27001), Grossunternehmen/Ministerium
+(BSI IT-Grundschutz), KRITIS-Einzelbetrieb (NIS2), Krankenhaus (B3S +
+DSGVO), Finanzdienstleister (BAIT/VAIT/ZAIT/DORA), Automotive-Zulieferer
+(TISAX).
 
 ---
 
@@ -103,6 +106,143 @@ FTE-Wochen)
 
 **Anmerkung:** Die 4 NIS2-Audits bleiben Pflicht — ComplianceOS reduziert
 den internen Aufwand pro Audit, nicht die Audit-Frequenz.
+
+---
+
+## Szenario 4 — Krankenhaus (Versorger > 30.000 Faelle/Jahr)
+
+**Regulierungs-Kontext:** Branchenspezifischer Sicherheits-Standard
+**B3S-Krankenhaus** (DKG/BSI-anerkannt) plus DSGVO-Pflichten fuer besonders
+schuetzenswerte Gesundheitsdaten (Art. 9 DSGVO). Pruefungen alle zwei
+Jahre durch eine pruefende Stelle.
+
+**Ausgangslage ohne ComplianceOS:**
+
+- IT-Sicherheitsteam mit 1,5 FTE plus Datenschutzbeauftragter (extern,
+  20 % Auslastung)
+- B3S-Anforderungen werden in einer Excel-Liste mit ueber 200 Pruefkriterien
+  gepflegt; Querverweise zu DSGVO Art. 25/32 manuell
+- KHZG-Foerderung erforderte parallele Nachweisfuehrung zu Sicherheits-
+  Massnahmen (Foerdertatbestaende 1, 5, 10) — separate Excel
+- Pruefungs-Vorbereitung: 60 Tage mit Dokumenten-Bundle und Interview-
+  Vorbereitung der dezentralen Bereiche
+
+**FTE-Aufwand pro 2-Jahres-Pruefzyklus (intern):** 22 FTE-Wochen
+
+**Ausgangslage mit ComplianceOS:**
+
+- B3S-Mapping als eigene Standard-Auspraegung (Cross-Standard-Mapping zu
+  ISO 27001 und DSGVO automatisch)
+- KHZG-relevante Massnahmen werden ueber Tags den entsprechenden
+  Foerdertatbestaenden zugeordnet — ein Findings-Bestand, mehrere Reports
+- Vorbereitungs-Dauer: 20 Tage mit Drift-Report seit der letzten Pruefung
+
+**FTE-Aufwand pro 2-Jahres-Pruefzyklus (intern):** 8 FTE-Wochen
+
+| Metrik | Vorher | Nachher | Einsparung |
+|---|---|---|---|
+| B3S-Pruefvorbereitung | 60 Tage | 20 Tage | -67 % |
+| FTE-Wochen pro Zyklus | 22 | 8 | -14 FTE-Wochen |
+| KHZG-Nachweis-Effort | separater Excel-Track | gleiche Findings, anderer Report-Filter | qualitativ entlastet |
+
+**Anmerkung:** Pruefende Stellen nach B3S verlangen weiterhin originaer
+gefuehrte Dokumentation pro Bereich (Notaufnahme, OP, Labor) — ComplianceOS
+reduziert die Aggregations-Arbeit, nicht die fachliche Verantwortung der
+Bereichsleitungen.
+
+---
+
+## Szenario 5 — Finanzdienstleister Mittelstand (1.500 Mitarbeiter)
+
+**Regulierungs-Kontext:** **BAIT** (Banken), **VAIT** (Versicherungen),
+**ZAIT** (Zahlungsdienste) — je nach Geschaeftsfeld kombinierbar — sowie
+**DORA** (EU 2022/2554, Anwendung seit Januar 2025) mit verschaerften
+Anforderungen an digitale operationale Resilienz, Threat-Led-Penetration-
+Testing (TLPT) und ICT-Drittparteienregister.
+
+**Ausgangslage ohne ComplianceOS:**
+
+- 2-3 BAIT/VAIT-Pruefungen pro Jahr durch interne Revision plus jaehrliche
+  Sonderpruefungen durch BaFin-beauftragte Auditoren
+- DORA-Drittparteienregister wird in einer GRC-Insellandschaft gepflegt,
+  Critical-ICT-Provider werden manuell gegen Vertraege abgeglichen
+- Incident-Klassifikation gemaess DORA Art. 18 erfordert konsistente
+  Severity-Bewertung — bisher uneinheitlich pro Pruefung
+- TLPT-Vorbereitung jaehrlich: 8 Wochen Aufwand fuer Scope-Definition und
+  Auditor-Onboarding
+
+**FTE-Aufwand pro Jahr (intern, alle Pruefungen kumuliert):** 38 FTE-Wochen
+
+**Ausgangslage mit ComplianceOS:**
+
+- BAIT/VAIT/ZAIT als drei Standard-Auspraegungen mit Cross-Mapping zu
+  ISO 27001 (gemeinsame Findings, Pruefer-spezifische Reports)
+- DORA-Drittparteienregister als Erweiterung der Findings-Struktur, mit
+  Tagging fuer Critical-ICT-Provider und automatischer Konsolidierung im
+  jaehrlichen DORA-Selbstreport
+- Incident-Klassifikation an die ComplianceOS-Severity-Logik angeschlossen
+  (major / minor / observation), Audit-Trail pro Klassifikations-Entscheidung
+- TLPT-Vorbereitung verkuerzt durch lebende Findings-Datenbank: 3 Wochen
+
+**FTE-Aufwand pro Jahr (intern):** 16 FTE-Wochen
+
+| Metrik | Vorher | Nachher | Einsparung |
+|---|---|---|---|
+| TLPT-Vorbereitung | 8 Wochen | 3 Wochen | -63 % |
+| FTE-Wochen pro Jahr | 38 | 16 | -22 FTE-Wochen |
+| Drittparteien-Register-Pflege | separates GRC-Tool | ein Findings-Bestand | qualitativ vereinheitlicht |
+
+**Anmerkung:** ComplianceOS ersetzt weder die BaFin-Aufsicht noch
+DORA-Pruefer. TLPT erfordert weiterhin akkreditierte Test-Provider und
+ein eigenstaendiges Reporting an die Aufsichtsbehoerde.
+
+---
+
+## Szenario 6 — Automotive-Zulieferer (Tier-2, 800 Mitarbeiter)
+
+**Regulierungs-Kontext:** **TISAX** (Trusted Information Security
+Assessment Exchange) ist die Audit-Norm der deutschen Automobilindustrie,
+gepflegt durch die ENX Association. Pruefniveaus sind **Level 2** (Self-
+Assessment plus Plausibilitaets-Pruefung) und **Level 3** (vollstaendiger
+Vor-Ort-Audit, erforderlich fuer hohe Verfuegbarkeits- oder
+Geheimhaltungsanforderungen).
+
+**Ausgangslage ohne ComplianceOS:**
+
+- TISAX-Auditzyklus alle 3 Jahre, parallel laufende Anforderungen an ISO
+  27001 (oft als Vorstufe oder begleitend)
+- Self-Assessment basiert auf der ENX-Pflichtfragenliste mit ueber 110
+  Anforderungen — gepflegt in Excel
+- Reife-Beurteilung pro Anforderung (0-5) wird zwischen Audits mehrfach
+  manuell aktualisiert
+- Vor-Ort-Audit-Vorbereitung Level 3: 12 Wochen mit OEM-Liefer-Anforderungen
+  (Hersteller-spezifische Zusatzklauseln)
+
+**FTE-Aufwand pro Auditzyklus (intern):** 28 FTE-Wochen
+
+**Ausgangslage mit ComplianceOS:**
+
+- TISAX-Anforderungen werden als Standard-Auspraegung in der Control-Matrix
+  gepflegt; Cross-Mapping zu ISO 27001 zeigt Doppelbelegung
+- Reife-Beurteilung wird im Findings-Workflow gefuehrt (Severity entspricht
+  Reife-Stufe), Audit-Trail pro Aenderung
+- Vor-Ort-Audit-Vorbereitung Level 3: 4 Wochen, weil Drift-Report seit
+  Self-Assessment automatisch erzeugt wird
+- Hersteller-spezifische Zusatzklauseln werden via Tags / Custom-Controls
+  als Erweiterung des TISAX-Basis-Sets gepflegt (siehe Customer-Override
+  in der [Architektur-Doku](../architecture.md))
+
+**FTE-Aufwand pro Auditzyklus (intern):** 10 FTE-Wochen
+
+| Metrik | Vorher | Nachher | Einsparung |
+|---|---|---|---|
+| Vor-Ort-Audit-Vorbereitung | 12 Wochen | 4 Wochen | -67 % |
+| FTE-Wochen pro Zyklus | 28 | 10 | -18 FTE-Wochen |
+| Reife-Beurteilung | mehrfach manuell aktualisiert | Findings-Workflow mit Audit-Trail | qualitativ verbessert |
+
+**Anmerkung:** Level-3-Pruefungen erfordern weiterhin eine ENX-akkreditierte
+Pruefstelle und einen Vor-Ort-Termin. ComplianceOS reduziert die interne
+Vorbereitungszeit, nicht die regulatorische Pflicht zur externen Pruefung.
 
 ---
 

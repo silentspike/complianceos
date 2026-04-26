@@ -1,0 +1,12 @@
+# RFC 9116 — security.txt for silentspike / ComplianceOS
+#
+# We do not operate a separate security mailbox. All vulnerability reports
+# go through GitHub Security Advisories (private, authenticated, integrated
+# with our triage workflow). See SECURITY.md for the full disclosure
+# policy and SLAs.
+
+Contact: https://github.com/silentspike/complianceos/security/advisories/new
+Expires: 2027-04-26T00:00:00Z
+Preferred-Languages: en, de
+Canonical: https://silentspike.github.io/complianceos/.well-known/security.txt
+Policy: https://github.com/silentspike/complianceos/blob/main/SECURITY.md
