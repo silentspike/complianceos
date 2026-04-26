@@ -107,6 +107,19 @@ Inhalt:
 - Bedienung aller Module (Dashboard, Audits, Findings, Chat, Policies, Reports, ...)
 - Referenz (Standards, Glossar, FAQ, Tastaturkuerzel)
 
+### Tiefer einsteigen
+
+Wenn Sie evaluieren oder eine Beschaffungs-Entscheidung vorbereiten,
+sind diese Seiten der schnellste Einstieg:
+
+| Wofuer | Link |
+|---|---|
+| Wie ist ComplianceOS aufgebaut? | [Architektur-Ueberblick](docs/architecture.md) und [Control-Matrix Workflow](docs/architecture/control-matrix-workflow.md) |
+| Wie sieht ein Report aus? | [Synthetisches Beispiel-Report](docs/samples/sample-audit-report.html) |
+| Passt das zu unserer Organisation? | [Zielgruppen](docs/business/for-who.md) |
+| Was ist die Wirtschaftlichkeit? | [ROI-Szenarien (6 illustrative)](docs/business/roi.md) |
+| Welche Regulierungen werden adressiert? | [Regulierungs-Detailseiten](docs/business/regulations/) — NIS2, B3S Krankenhaus, BAIT/VAIT/ZAIT, DORA, BSI IT-Grundschutz, TISAX |
+
 ## Kontakt
 
 - **Evaluation / Kommerzielle Lizenz:** [Evaluation Request Template](https://github.com/silentspike/complianceos/issues/new?template=evaluation_request.yml)
