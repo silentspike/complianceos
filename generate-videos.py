@@ -26,7 +26,7 @@ from PIL import Image, ImageDraw, ImageFont
 # --- Config ---
 BASE_URL = "http://localhost:8001"
 FRAME_DIR = Path("/tmp/video-frames")
-OUTPUT_DIR = Path("/work/complianceos-public/docs/videos")
+OUTPUT_DIR = Path(__file__).parent / "docs" / "videos"
 WIDTH, HEIGHT = 1280, 720
 FPS = 2  # Frames per second for slideshow
 HOLD_SECONDS = 3  # How long each annotated frame is shown

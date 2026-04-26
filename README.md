@@ -61,58 +61,29 @@ ComplianceOS nutzt das **Obsidian Prism** Design System — ein professionelles 
 
 ![Audit Detail](docs/screenshots/audits/audit-detail.png)
 
-## Installation
+## Fuer wen ist ComplianceOS?
 
-### Voraussetzungen
+ComplianceOS richtet sich an regulierte Organisationen und den oeffentlichen
+Sektor, bei denen Compliance nicht verhandelbar ist und Daten nicht in eine
+fremde Cloud duerfen:
 
-- Docker und Docker Compose
-- Mindestens 512 MB RAM, 1 GB Festplatte
-- Optional: [Claude Code](https://claude.ai/claude-code) Subscription fuer KI-Features
+- **KRITIS-Betreiber** (Energie, Wasser, Telekommunikation) unter NIS2 / KritisV
+- **Krankenhaeuser und Gesundheitsdienstleister** (B3S-Krankenhaus, DSGVO)
+- **Finanzdienstleister** unter BAIT / VAIT / ZAIT und DORA
+- **Ministerien und oeffentliche Verwaltung** (BSI IT-Grundschutz)
+- **Regulierter Mittelstand** (200 - 5000 Mitarbeiter) mit ISO 27001 / TISAX-Pflicht
 
-### Quick Start
+## Evaluation anfordern
 
-```bash
-# 1. Repository klonen
-git clone https://github.com/silentspike/complianceos.git
-cd complianceos
+ComplianceOS ist proprietaere Software und wird nicht als oeffentlicher
+Binary-Download bereitgestellt. Fuer Evaluationen und kommerzielle Lizenzen:
 
-# 2. Starten
-docker compose up -d
+- **Evaluation Request:** [Issue-Template oeffnen](https://github.com/silentspike/complianceos/issues/new?template=evaluation_request.yml)
+- **Dokumentation:** [silentspike.github.io/complianceos](https://silentspike.github.io/complianceos/)
 
-# 3. Browser oeffnen
-open http://localhost:8001
-```
-
-Das war's. ComplianceOS laeuft.
-
-### Aktualisieren
-
-```bash
-docker compose pull
-docker compose up -d
-```
-
-### Stoppen
-
-```bash
-docker compose down
-```
-
-Daten bleiben im Docker Volume `complianceos-data` erhalten.
-
-## Konfiguration
-
-Alle Einstellungen ueber Umgebungsvariablen in `docker-compose.yml`:
-
-| Variable | Standard | Beschreibung |
-|----------|----------|-------------|
-| `COMPLIANCEOS_PORT` | `8001` | Server-Port |
-| `COMPLIANCEOS_LOG_LEVEL` | `INFO` | Log-Level (DEBUG, INFO, WARNING, ERROR) |
-| `COMPLIANCEOS_LANG` | `de` | Sprache (de, en) |
-| `ENABLE_TEAMMATES` | `false` | KI-Agent-Orchestrierung |
-| `ENABLE_PDF_UPLOAD` | `true` | PDF-Upload aktivieren |
-| `ENABLE_POLICY_GEN` | `true` | Policy-Generierung aktivieren |
-| `ENABLE_DSGVO` | `true` | DSGVO-Standard aktivieren |
+Die Evaluation umfasst ein 90-Tage-Pilot-Zeitfenster mit vollem Funktionsumfang
+auf Ihrer Infrastruktur, fachliche Begleitung durch silentspike und dokumentierte
+Compliance-Artefakte fuer das erste Audit-Zyklus.
 
 ## Datenschutz
 
@@ -136,8 +107,9 @@ Inhalt:
 - Bedienung aller Module (Dashboard, Audits, Findings, Chat, Policies, Reports, ...)
 - Referenz (Standards, Glossar, FAQ, Tastaturkuerzel)
 
-## Support
+## Kontakt
 
+- **Evaluation / Kommerzielle Lizenz:** [Evaluation Request Template](https://github.com/silentspike/complianceos/issues/new?template=evaluation_request.yml)
 - **Bugs und Feature-Requests:** [GitHub Issues](https://github.com/silentspike/complianceos/issues)
 - **Sicherheitsprobleme:** Siehe [SECURITY.md](SECURITY.md)
 

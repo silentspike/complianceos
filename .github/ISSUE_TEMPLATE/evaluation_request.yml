@@ -1,0 +1,148 @@
+name: Evaluation Request
+description: Fordere ComplianceOS fuer eine Evaluation an (90-Tage-Pilot auf Ihrer Infrastruktur)
+title: "[Eval] <Organisation>"
+labels: ["evaluation", "sales"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Vielen Dank fuer Ihr Interesse an ComplianceOS!
+
+        ComplianceOS ist proprietaere On-Premise-Software. Eine Evaluation umfasst
+        ein 90-Tage-Pilot-Zeitfenster mit vollem Funktionsumfang auf Ihrer Infrastruktur,
+        fachliche Begleitung durch silentspike und dokumentierte Compliance-Artefakte
+        fuer den ersten Audit-Zyklus.
+
+        Wir melden uns in der Regel innerhalb von 3 Werktagen.
+
+  - type: input
+    id: organization
+    attributes:
+      label: Organisation
+      description: Name der Firma, des Ministeriums oder der Institution
+      placeholder: "Beispiel GmbH / Bundesministerium X / Stadtwerke Y"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: sector
+    attributes:
+      label: Branche / Sektor
+      description: Welche Kategorie trifft am ehesten zu?
+      options:
+        - "KRITIS (Energie / Wasser / Telekommunikation)"
+        - "Gesundheitswesen (Krankenhaus / Gesundheitsdienstleister)"
+        - "Finanzdienstleister (Bank / Versicherer / FinTech)"
+        - "Oeffentliche Verwaltung (Bundes- / Landes- / Kommunalbehoerde)"
+        - "Regulierter Mittelstand (Automotive / Industrie / Energie-Lieferant)"
+        - "Sonstiges"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: organization_size
+    attributes:
+      label: Organisations-Groesse
+      description: Mitarbeiterzahl (hilft uns beim passenden Pilot-Setup)
+      options:
+        - "< 200 Mitarbeiter"
+        - "200 - 1.000 Mitarbeiter"
+        - "1.000 - 5.000 Mitarbeiter"
+        - "5.000 - 20.000 Mitarbeiter"
+        - "> 20.000 Mitarbeiter"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: target_standards
+    attributes:
+      label: Relevante Standards
+      description: Welche Compliance-Regelwerke muessen Sie erfuellen? Mehrfachauswahl moeglich.
+      options:
+        - label: ISO/IEC 27001:2022
+        - label: ISO 22301:2019 (BCM)
+        - label: ISO/IEC 27017/27018 (Cloud)
+        - label: NIS2 (EU 2022/2555)
+        - label: BSI IT-Grundschutz
+        - label: DSGVO (EU 2016/679)
+        - label: TISAX (Automotive)
+        - label: BAIT / VAIT / ZAIT (Finanz)
+        - label: DORA (Digital Operational Resilience Act)
+        - label: PCI DSS
+        - label: Sonstige (bitte im Use-Case spezifizieren)
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Use-Case / Primaere Audit-Ziele
+      description: |
+        Beschreiben Sie kurz, was Sie mit ComplianceOS erreichen wollen.
+        Beispiele: "Zertifizierung ISO 27001 Ende 2026 vorbereiten", "NIS2-Reifegradanalyse",
+        "Gap-Analyse TISAX Level 3", "IT-Grundschutz Modellierung fuer 40 Bausteine".
+      placeholder: |
+        - Geplante Zertifizierung / Audit bis: ...
+        - Aktuelle Ausgangslage: ...
+        - Hauptschmerz heute: ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: deployment
+    attributes:
+      label: Deployment-Umgebung
+      description: Wie planen Sie die Installation?
+      options:
+        - "On-Premise Docker-Host (Linux)"
+        - "On-Premise Kubernetes"
+        - "Private Cloud (z. B. BSI-C5, dedizierte VM)"
+        - "Noch offen / Beratung erwuenscht"
+    validations:
+      required: true
+
+  - type: input
+    id: contact_email
+    attributes:
+      label: Kontakt-Email
+      description: Dienstliche Email-Adresse fuer die Evaluation-Korrespondenz
+      placeholder: "vorname.nachname@organisation.de"
+    validations:
+      required: true
+
+  - type: input
+    id: contact_role
+    attributes:
+      label: Ihre Rolle
+      description: Ihre Position / Funktion in der Organisation
+      placeholder: "CISO / ISB / IT-Leiter / Compliance-Manager / ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Weitere Hinweise (optional)
+      description: Besondere Rahmenbedingungen, Timeline, Integrationsanforderungen, etc.
+
+  - type: checkboxes
+    id: eula_acknowledgment
+    attributes:
+      label: Evaluation-Bedingungen
+      description: "Die Evaluation unterliegt der ComplianceOS Proprietary License (siehe [LICENSE](https://github.com/silentspike/complianceos/blob/main/LICENSE))."
+      options:
+        - label: Ich bestaetige, dass die Evaluation zu internen Bewertungszwecken dient und keine produktive Verwendung ohne separates Lizenzabkommen vorgesehen ist.
+          required: true
+        - label: Mir ist bekannt, dass ComplianceOS proprietaere Software ist und keine Weiterverbreitung oder Quellcode-Analyse erlaubt ist.
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        **Was passiert nach Absenden?**
+
+        1. silentspike meldet sich innerhalb von 3 Werktagen per Email
+        2. Kurz-Sondierungsgespraech (30 Minuten) ueber Pilot-Scope und Zeitplan
+        3. Bereitstellung Binary + Lizenzschluessel fuer 90-Tage-Pilot
+        4. Fachliche Begleitung waehrend der Pilot-Phase
+        5. Entscheidung ueber Lizenz-Abschluss am Ende des Pilots
