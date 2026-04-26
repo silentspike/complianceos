@@ -81,7 +81,7 @@ docker run --rm \
   busybox tar czf /backup/complianceos-backup-$(date +%Y%m%d).tar.gz /data
 ```
 
-Details: [Docker-Konfiguration](../schnellstart/docker.md)
+Backup-Hinweise und Container-Konfiguration sind Teil der Eval-Lieferung. Siehe [Installation](../schnellstart/installation.md).
 
 ### Kann ich den Port ändern?
 
@@ -237,4 +237,4 @@ Die Standard-Beschreibungen und AUDIT-CHECKs sind in **Deutsch** hinterlegt. Eng
 
 ### Kann ich ComplianceOS im Internet erreichbar machen?
 
-ComplianceOS ist für den internen Einsatz konzipiert. Wenn Sie es extern erreichbar machen müssen, verwenden Sie einen **Reverse Proxy mit Authentifizierung** (z.B. nginx + Basic Auth oder SSO). Details: [Docker-Konfiguration](../schnellstart/docker.md)
+ComplianceOS ist für den internen Einsatz konzipiert. Wenn Sie es extern erreichbar machen müssen, verwenden Sie einen **Reverse Proxy mit Authentifizierung** (z.B. nginx + Basic Auth oder SSO). Konkrete Reverse-Proxy-Konfiguration ist Teil der Eval-Lieferung; siehe [Installation](../schnellstart/installation.md).
