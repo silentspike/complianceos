@@ -6,12 +6,14 @@ on:
     paths:
       - 'docs/**'
       - 'mkdocs.yml'
+      - 'README.md'
       - '.github/workflows/docs.yml'
   pull_request:
     branches: [main]
     paths:
       - 'docs/**'
       - 'mkdocs.yml'
+      - 'README.md'
       - '.github/workflows/docs.yml'
 
 permissions:
