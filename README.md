@@ -121,6 +121,9 @@ ComplianceOS ist eine **On-Premise-Anwendung**:
 
 Die KI-Integration ist vollstaendig optional und kann durch Weglassen der Umgebungsvariable `ENABLE_TEAMMATES=false` deaktiviert werden.
 
+Hintergrund zum Deployment-Modell und der On-Prem-AI-Boundary: siehe
+[AI Deployment in regulierten Umgebungen](docs/business/ai-deployment-relevance.md).
+
 ## Dokumentation
 
 Die vollstaendige Bedienungsanleitung finden Sie unter:
