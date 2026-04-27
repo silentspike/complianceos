@@ -14,11 +14,6 @@
 > Die Ergebnisse dienen als Entscheidungsgrundlage und muessen von qualifizierten
 > Fachpersonen geprueft werden.
 
-> **Hinweis zum Repository:** Dieses oeffentliche Repository enthaelt die
-> Dokumentation und Evaluation-Surface. Anwendungs-Source und ausfuehrbare
-> Binaries werden privat unter EULA bereitgestellt. Siehe
-> [Evaluation anfordern](#evaluation-anfordern) fuer den Ablauf.
-
 ---
 
 ## Was ist ComplianceOS?
@@ -26,6 +21,31 @@
 ComplianceOS ist eine On-Premise-Plattform fuer automatisierte Compliance-Audits gegen internationale Sicherheitsstandards. Die Anwendung laeuft vollstaendig auf Ihrer eigenen Infrastruktur — keine Daten verlassen Ihr Netzwerk. Eine optionale KI-Integration (Claude) unterstuetzt bei der Analyse und Beratung.
 
 ComplianceOS richtet sich an IT-Sicherheitsbeauftragte, Compliance-Manager und CISOs, die ihre Audit-Prozesse strukturieren und automatisieren moechten.
+
+> ⚠ **Hinweis zum Repository:** Dieses oeffentliche Repository enthaelt die
+> Dokumentation und Evaluation-Surface. Anwendungs-Source und ausfuehrbare
+> Binaries werden privat unter EULA bereitgestellt. Siehe
+> [Evaluation anfordern](#evaluation-anfordern).
+
+## Datenfluss
+
+```mermaid
+flowchart LR
+    User[User<br/>Browser/CLI]
+    App[ComplianceOS<br/>FastAPI + HTMX]
+    DB[(SQLite<br/>local)]
+    Docs[Local Docs<br/>PDF/DOCX/MD]
+    Claude[Claude API<br/>optional]
+
+    User --> App
+    App --> DB
+    App --> Docs
+    App -.optional.-> Claude
+```
+
+Macht den No-Telemetry / On-Prem / Optional-AI-Charakter sofort sichtbar:
+nur ein einziger optionaler Out-Pfad (gestrichelt) verlaesst die Kunden-
+Infrastruktur, alles andere bleibt lokal.
 
 ## Features
 
@@ -55,26 +75,6 @@ ComplianceOS richtet sich an IT-Sicherheitsbeauftragte, Compliance-Manager und C
 - **Executive Dashboard** — Risiko-Matrix, Business Impact, Compliance-Trends
 - **Dokument-Pipeline** — PDF, DOCX, XLSX, Markdown hochladen und analysieren
 - **Multi-Projekt** — Mehrere Organisationen/Projekte parallel verwalten
-
-### Datenfluss
-
-```mermaid
-flowchart LR
-    User[User<br/>Browser/CLI]
-    App[ComplianceOS<br/>FastAPI + HTMX]
-    DB[(SQLite<br/>local)]
-    Docs[Local Docs<br/>PDF/DOCX/MD]
-    Claude[Claude API<br/>optional]
-
-    User --> App
-    App --> DB
-    App --> Docs
-    App -.optional.-> Claude
-```
-
-Macht den No-Telemetry / On-Prem / Optional-AI-Charakter sofort sichtbar:
-nur ein einziger optionaler Out-Pfad (gestrichelt) verlaesst die Kunden-
-Infrastruktur, alles andere bleibt lokal.
 
 ### Design
 
