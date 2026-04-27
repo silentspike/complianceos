@@ -121,6 +121,9 @@ ComplianceOS ist eine **On-Premise-Anwendung**:
 
 Die KI-Integration ist vollstaendig optional und kann durch Weglassen der Umgebungsvariable `ENABLE_TEAMMATES=false` deaktiviert werden.
 
+Hintergrund zum Deployment-Modell und der On-Prem-AI-Boundary: siehe
+[AI Deployment in regulierten Umgebungen](docs/business/ai-deployment-relevance.md).
+
 ## Dokumentation
 
 Die vollstaendige Bedienungsanleitung finden Sie unter:
@@ -157,13 +160,33 @@ ComplianceOS ist proprietaere Software. Siehe [LICENSE](LICENSE) fuer Details.
 
 Copyright (c) 2026 ComplianceOS / silentspike. Alle Rechte vorbehalten.
 
-## In English
+## English Summary
 
-ComplianceOS is an on-premise compliance audit platform for regulated sectors
-(KRITIS, healthcare, finance, public administration, regulated SMB). It runs
-entirely on customer infrastructure with optional Claude AI support, no
-telemetry, and SQLite/local document storage. Evaluation flow: private
-delivery under EULA, 90-day pilot, security committee review.
+### Hero
+
+ComplianceOS is an on-premise compliance audit platform for regulated organizations and the public sector. It runs entirely on customer infrastructure with optional Claude AI support, no telemetry, and SQLite/local document storage.
+
+### What it is
+
+Automates audits against international security standards: ISO/IEC 27001:2022, ISO 22301, ISO/IEC 27005, ISO/IEC 27017/27018, ISO/IEC 27035, NIS2, BSI IT-Grundschutz, GDPR. Coverage: 9 standards, 135 controls in 12 domains, 2,285 semantic checkpoints.
+
+### Audience
+
+Built for KRITIS operators (energy, water, telecom under NIS2/KritisV), hospitals (B3S-Krankenhaus, GDPR), financial services (BAIT/VAIT/ZAIT, DORA), public administration (BSI IT-Grundschutz), and regulated mid-sized enterprises (200-5000 employees) with ISO 27001 / TISAX requirements.
+
+### Architecture
+
+See the [Mermaid data flow diagram](#datenfluss) above and the [Architecture Overview](docs/architecture.md). Stack: Python (FastAPI + HTMX + SQLite), with optional Claude API integration that can be disabled via environment variable (`ENABLE_TEAMMATES=false`).
+
+### Evaluation flow
+
+Private delivery under EULA. 90-day pilot on customer infrastructure. Compliance artifacts documented for the first audit cycle. Request via the [evaluation_request.yml](https://github.com/silentspike/complianceos/issues/new?template=evaluation_request.yml) issue template.
+
+### Public/Private disclosure
+
+This public repository contains documentation and evaluation surface. Application source and executable binaries are delivered privately under EULA. The product is proprietary software. See [docs/business/ai-deployment-relevance.md](docs/business/ai-deployment-relevance.md) for AI deployment in regulated environments.
+
+### Resources
 
 - Documentation: https://silentspike.github.io/complianceos/
 - Evaluation request: https://github.com/silentspike/complianceos/issues/new?template=evaluation_request.yml
