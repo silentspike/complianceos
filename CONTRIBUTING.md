@@ -10,7 +10,15 @@ Thank you for your interest in ComplianceOS!
 
 ## Code Contributions
 
-ComplianceOS is proprietary software. We do not accept external code contributions at this time.
+ComplianceOS is proprietary software. We do not accept external code contributions to the application source.
+
+The public repository (documentation, examples, ROI templates) accepts contributions in the following areas:
+
+- **Documentation accuracy** — bug reports for incorrect or outdated documentation
+- **Regulatory standards coverage** — suggestions for additional standards or controls
+- **Translation/localization improvements** — DE/EN parity, terminology accuracy
+
+Please use the [Bug Report](https://github.com/silentspike/complianceos/issues/new?template=bug_report.yml) or [Feature Request](https://github.com/silentspike/complianceos/issues/new?template=feature_request.yml) templates. Application source and executable binaries are delivered privately under EULA — see [LICENSE](LICENSE).
 
 ## Feedback
 
