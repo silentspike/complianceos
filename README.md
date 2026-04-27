@@ -146,6 +146,7 @@ sind diese Seiten der schnellste Einstieg:
 | Wie sieht ein Report aus? | [Synthetisches Beispiel-Report](docs/samples/sample-audit-report.html) |
 | Passt das zu unserer Organisation? | [Zielgruppen](docs/business/for-who.md) |
 | Was ist die Wirtschaftlichkeit? | [ROI-Szenarien (6 illustrative)](docs/business/roi.md) |
+| Wie sieht eine Audit-Aufwand-Rechnung im Detail aus? | [`examples/`](examples/) — ISO 27001 Mid-Enterprise, NIS2 KRITIS, B3S Krankenhaus |
 | Welche Regulierungen werden adressiert? | [Regulierungs-Detailseiten](docs/business/regulations/) — NIS2, B3S Krankenhaus, BAIT/VAIT/ZAIT, DORA, BSI IT-Grundschutz, TISAX |
 
 ## Kontakt
