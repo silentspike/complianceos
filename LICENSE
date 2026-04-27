@@ -1,5 +1,12 @@
 ComplianceOS - Proprietary Software License
 
+NOTICE — Public Repository Scope:
+This public repository contains documentation and evaluation assets only.
+Application source code and executable binaries are licensed separately
+under the ComplianceOS End User License Agreement (EULA), available upon
+evaluation request via the GitHub Issue template
+(.github/ISSUE_TEMPLATE/evaluation_request.yml).
+
 Copyright (c) 2026 ComplianceOS / silentspike. All rights reserved.
 
 TERMS AND CONDITIONS
