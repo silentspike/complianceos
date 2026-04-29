@@ -26,6 +26,16 @@
 
 ---
 
+## Why this matters for AI deployment
+
+Running AI in regulated environments is first an architecture
+question, not a model question. ComplianceOS demonstrates the boundary
+pattern: **on-prem core**, **optional AI integration** (`ENABLE_TEAMMATES=false`
+disables it entirely), **no telemetry**, **local SQLite + document
+storage**, **EULA-based evaluation flow**.
+
+→ Full discussion: [`docs/business/ai-deployment-relevance.md`](docs/business/ai-deployment-relevance.md)
+
 ## Was ist ComplianceOS?
 
 ComplianceOS ist eine On-Premise-Plattform für automatisierte Compliance-Audits gegen internationale Sicherheitsstandards. Die Anwendung läuft vollständig auf Ihrer eigenen Infrastruktur — keine Daten verlassen Ihr Netzwerk. Eine optionale KI-Integration (Claude) unterstützt bei der Analyse und Beratung.
