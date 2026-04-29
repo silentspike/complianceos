@@ -32,6 +32,9 @@ ComplianceOS ist eine On-Premise-Plattform für automatisierte Compliance-Audits
 
 ComplianceOS richtet sich an IT-Sicherheitsbeauftragte, Compliance-Manager und CISOs, die ihre Audit-Prozesse strukturieren und automatisieren möchten.
 
+> 📋 **Evaluation anfordern / Request evaluation:** [Issue-Template öffnen](https://github.com/silentspike/complianceos/issues/new?template=evaluation_request.yml)
+> — 90-Tage-Pilot mit vollem Funktionsumfang auf Ihrer Infrastruktur.
+
 > ⚠ **Hinweis zum Repository:** Dieses öffentliche Repository enthält die
 > Dokumentation und Evaluation-Surface. Anwendungs-Source und ausführbare
 > Binaries werden privat unter EULA bereitgestellt. Siehe
