@@ -17,6 +17,15 @@
 
 ---
 
+> **For international reviewers:** ComplianceOS is an on-premise
+> compliance audit platform for regulated organizations and the public
+> sector. It runs entirely on customer infrastructure, with optional
+> Claude AI integration that can be disabled. No telemetry, SQLite
+> storage, EULA-based proprietary license, 90-day evaluation pilots.
+> [Full English Summary →](#english-summary) · [Request evaluation →](#evaluation-anfordern)
+
+---
+
 ## Was ist ComplianceOS?
 
 ComplianceOS ist eine On-Premise-Plattform für automatisierte Compliance-Audits gegen internationale Sicherheitsstandards. Die Anwendung läuft vollständig auf Ihrer eigenen Infrastruktur — keine Daten verlassen Ihr Netzwerk. Eine optionale KI-Integration (Claude) unterstützt bei der Analyse und Beratung.
