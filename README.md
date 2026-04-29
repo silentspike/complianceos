@@ -1,6 +1,7 @@
 # ComplianceOS
 
-**KI-gestuetzte On-Premise Compliance-Audit-Plattform**
+**KI-gestützte On-Premise Compliance-Audit-Plattform**  
+**AI-assisted on-premise compliance audit platform**
 
 ![License](https://img.shields.io/badge/Lizenz-Propriet%C3%A4r-red.svg)
 ![Python](https://img.shields.io/badge/Python-3.12-blue.svg)
@@ -11,19 +12,19 @@
 ---
 
 > **Hinweis:** ComplianceOS ersetzt keine professionelle Rechts- oder Compliance-Beratung.
-> Die Ergebnisse dienen als Entscheidungsgrundlage und muessen von qualifizierten
-> Fachpersonen geprueft werden.
+> Die Ergebnisse dienen als Entscheidungsgrundlage und müssen von qualifizierten
+> Fachpersonen geprüft werden.
 
 ---
 
 ## Was ist ComplianceOS?
 
-ComplianceOS ist eine On-Premise-Plattform fuer automatisierte Compliance-Audits gegen internationale Sicherheitsstandards. Die Anwendung laeuft vollstaendig auf Ihrer eigenen Infrastruktur — keine Daten verlassen Ihr Netzwerk. Eine optionale KI-Integration (Claude) unterstuetzt bei der Analyse und Beratung.
+ComplianceOS ist eine On-Premise-Plattform für automatisierte Compliance-Audits gegen internationale Sicherheitsstandards. Die Anwendung läuft vollstaendig auf Ihrer eigenen Infrastruktur — keine Daten verlassen Ihr Netzwerk. Eine optionale KI-Integration (Claude) unterstuetzt bei der Analyse und Beratung.
 
-ComplianceOS richtet sich an IT-Sicherheitsbeauftragte, Compliance-Manager und CISOs, die ihre Audit-Prozesse strukturieren und automatisieren moechten.
+ComplianceOS richtet sich an IT-Sicherheitsbeauftragte, Compliance-Manager und CISOs, die ihre Audit-Prozesse strukturieren und automatisieren möchten.
 
-> ⚠ **Hinweis zum Repository:** Dieses oeffentliche Repository enthaelt die
-> Dokumentation und Evaluation-Surface. Anwendungs-Source und ausfuehrbare
+> ⚠ **Hinweis zum Repository:** Dieses öffentliche Repository enthält die
+> Dokumentation und Evaluation-Surface. Anwendungs-Source und ausführbare
 > Binaries werden privat unter EULA bereitgestellt. Siehe
 > [Evaluation anfordern](#evaluation-anfordern).
 
@@ -65,7 +66,7 @@ Infrastruktur, alles andere bleibt lokal.
 
 ### Kernfunktionen
 
-- **Audit-Engine** — 135 Controls in 12 Domains mit 2.285 semantischen Pruefpunkten, automatische und manuelle Checks
+- **Audit-Engine** — 135 Controls in 12 Domains mit 2.285 semantischen Prüfpunkten, automatische und manuelle Checks
 - **KI-Chat** — Compliance-Fragen stellen, Findings analysieren, Empfehlungen erhalten (Claude AI, optional)
 - **Findings-Management** — Severity-Klassifikation, Status-Workflow, Zuweisung, Deadlines
 - **Remediation-Tracking** — Massnahmen verfolgen, Verantwortliche zuweisen, Fortschritt messen
@@ -86,29 +87,29 @@ ComplianceOS nutzt das **Obsidian Prism** Design System — ein professionelles 
 
 ![Audit Detail](docs/screenshots/audits/audit-detail.png)
 
-## Fuer wen ist ComplianceOS?
+## Für wen ist ComplianceOS?
 
-ComplianceOS richtet sich an regulierte Organisationen und den oeffentlichen
+ComplianceOS richtet sich an regulierte Organisationen und den öffentlichen
 Sektor, bei denen Compliance nicht verhandelbar ist und Daten nicht in eine
 fremde Cloud duerfen:
 
 - **KRITIS-Betreiber** (Energie, Wasser, Telekommunikation) unter NIS2 / KritisV
-- **Krankenhaeuser und Gesundheitsdienstleister** (B3S-Krankenhaus, DSGVO)
+- **Krankenhäuser und Gesundheitsdienstleister** (B3S-Krankenhaus, DSGVO)
 - **Finanzdienstleister** unter BAIT / VAIT / ZAIT und DORA
-- **Ministerien und oeffentliche Verwaltung** (BSI IT-Grundschutz)
+- **Ministerien und öffentliche Verwaltung** (BSI IT-Grundschutz)
 - **Regulierter Mittelstand** (200 - 5000 Mitarbeiter) mit ISO 27001 / TISAX-Pflicht
 
 ## Evaluation anfordern
 
-ComplianceOS ist proprietaere Software und wird nicht als oeffentlicher
-Binary-Download bereitgestellt. Fuer Evaluationen und kommerzielle Lizenzen:
+ComplianceOS ist proprietäre Software und wird nicht als öffentlicher
+Binary-Download bereitgestellt. Für Evaluationen und kommerzielle Lizenzen:
 
 - **Evaluation Request:** [Issue-Template oeffnen](https://github.com/silentspike/complianceos/issues/new?template=evaluation_request.yml)
 - **Dokumentation:** [silentspike.github.io/complianceos](https://silentspike.github.io/complianceos/)
 
 Die Evaluation umfasst ein 90-Tage-Pilot-Zeitfenster mit vollem Funktionsumfang
 auf Ihrer Infrastruktur, fachliche Begleitung durch silentspike und dokumentierte
-Compliance-Artefakte fuer das erste Audit-Zyklus.
+Compliance-Artefakte für das erste Audit-Zyklus.
 
 ## Datenschutz
 
@@ -117,7 +118,7 @@ ComplianceOS ist eine **On-Premise-Anwendung**:
 - Alle Daten werden lokal in SQLite gespeichert
 - Keine Telemetrie, kein Tracking, keine externe Datenuebertragung
 - **Ohne KI-Integration:** Kein Netzwerkverkehr nach aussen
-- **Mit KI-Integration (optional):** Audit-Pruefpunkte und Findings-Analysen werden an die Claude API gesendet. Dokumente, Reports und die Datenbank verlassen Ihr System nicht.
+- **Mit KI-Integration (optional):** Audit-Prüfpunkte und Findings-Analysen werden an die Claude API gesendet. Dokumente, Reports und die Datenbank verlassen Ihr System nicht.
 
 Die KI-Integration ist vollstaendig optional und kann durch Weglassen der Umgebungsvariable `ENABLE_TEAMMATES=false` deaktiviert werden.
 
@@ -140,9 +141,9 @@ Inhalt:
 Wenn Sie evaluieren oder eine Beschaffungs-Entscheidung vorbereiten,
 sind diese Seiten der schnellste Einstieg:
 
-| Wofuer | Link |
+| Wofür | Link |
 |---|---|
-| Wie ist ComplianceOS aufgebaut? | [Architektur-Ueberblick](docs/architecture.md) und [Control-Matrix Workflow](docs/architecture/control-matrix-workflow.md) |
+| Wie ist ComplianceOS aufgebaut? | [Architektur-Überblick](docs/architecture.md) und [Control-Matrix Workflow](docs/architecture/control-matrix-workflow.md) |
 | Wie sieht ein Report aus? | [Synthetisches Beispiel-Report](docs/samples/sample-audit-report.html) |
 | Passt das zu unserer Organisation? | [Zielgruppen](docs/business/for-who.md) |
 | Was ist die Wirtschaftlichkeit? | [ROI-Szenarien (6 illustrative)](docs/business/roi.md) |
@@ -157,7 +158,7 @@ sind diese Seiten der schnellste Einstieg:
 
 ## Lizenz
 
-ComplianceOS ist proprietaere Software. Siehe [LICENSE](LICENSE) fuer Details.
+ComplianceOS ist proprietäre Software. Siehe [LICENSE](LICENSE) für Details.
 
 Copyright (c) 2026 ComplianceOS / silentspike. Alle Rechte vorbehalten.
 
