@@ -70,6 +70,17 @@ Macht den No-Telemetry / On-Prem / Optional-AI-Charakter sofort sichtbar:
 nur ein einziger optionaler Out-Pfad (gestrichelt) verlaesst die Kunden-
 Infrastruktur, alles andere bleibt lokal.
 
+## ROI-Beispiele / ROI scenarios
+
+Walkthrough-style cost-benefit calculations for three regulated-sector
+audit cycles:
+
+- [`examples/roi-iso27001-mid-enterprise.md`](examples/roi-iso27001-mid-enterprise.md) — Mid-Enterprise (200-5000 employees, ISO 27001 first audit)
+- [`examples/roi-nis2-kritis.md`](examples/roi-nis2-kritis.md) — KRITIS-Betreiber unter NIS2 Art. 21
+- [`examples/roi-b3s-hospital.md`](examples/roi-b3s-hospital.md) — Krankenhaus B3S (DSGVO + B3S-Krankenhaus)
+
+Werte sind illustrativ, nicht Vertragsgrundlage / values are illustrative, not contractual.
+
 ## Features
 
 ### 9 Compliance-Standards
