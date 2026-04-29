@@ -19,7 +19,7 @@
 
 ## Was ist ComplianceOS?
 
-ComplianceOS ist eine On-Premise-Plattform für automatisierte Compliance-Audits gegen internationale Sicherheitsstandards. Die Anwendung läuft vollstaendig auf Ihrer eigenen Infrastruktur — keine Daten verlassen Ihr Netzwerk. Eine optionale KI-Integration (Claude) unterstuetzt bei der Analyse und Beratung.
+ComplianceOS ist eine On-Premise-Plattform für automatisierte Compliance-Audits gegen internationale Sicherheitsstandards. Die Anwendung läuft vollständig auf Ihrer eigenen Infrastruktur — keine Daten verlassen Ihr Netzwerk. Eine optionale KI-Integration (Claude) unterstützt bei der Analyse und Beratung.
 
 ComplianceOS richtet sich an IT-Sicherheitsbeauftragte, Compliance-Manager und CISOs, die ihre Audit-Prozesse strukturieren und automatisieren möchten.
 
@@ -71,8 +71,8 @@ Infrastruktur, alles andere bleibt lokal.
 - **Findings-Management** — Severity-Klassifikation, Status-Workflow, Zuweisung, Deadlines
 - **Remediation-Tracking** — Massnahmen verfolgen, Verantwortliche zuweisen, Fortschritt messen
 - **Policy-Generator** — 6 Vorlagen (Passwort, Backup, Incident, Zugriff, ISMS, Datenschutz)
-- **Drift-Detection** — Regressionen zwischen Audit-Laeufen automatisch erkennen
-- **Cross-Standard-Mapping** — Controls standarduebergreifend zuordnen und Synergien nutzen
+- **Drift-Detection** — Regressionen zwischen Audit-Läufen automatisch erkennen
+- **Cross-Standard-Mapping** — Controls standardübergreifend zuordnen und Synergien nutzen
 - **Executive Dashboard** — Risiko-Matrix, Business Impact, Compliance-Trends
 - **Dokument-Pipeline** — PDF, DOCX, XLSX, Markdown hochladen und analysieren
 - **Multi-Projekt** — Mehrere Organisationen/Projekte parallel verwalten
@@ -91,7 +91,7 @@ ComplianceOS nutzt das **Obsidian Prism** Design System — ein professionelles 
 
 ComplianceOS richtet sich an regulierte Organisationen und den öffentlichen
 Sektor, bei denen Compliance nicht verhandelbar ist und Daten nicht in eine
-fremde Cloud duerfen:
+fremde Cloud dürfen:
 
 - **KRITIS-Betreiber** (Energie, Wasser, Telekommunikation) unter NIS2 / KritisV
 - **Krankenhäuser und Gesundheitsdienstleister** (B3S-Krankenhaus, DSGVO)
@@ -116,25 +116,25 @@ Compliance-Artefakte für das erste Audit-Zyklus.
 ComplianceOS ist eine **On-Premise-Anwendung**:
 
 - Alle Daten werden lokal in SQLite gespeichert
-- Keine Telemetrie, kein Tracking, keine externe Datenuebertragung
-- **Ohne KI-Integration:** Kein Netzwerkverkehr nach aussen
+- Keine Telemetrie, kein Tracking, keine externe Datenübertragung
+- **Ohne KI-Integration:** Kein Netzwerkverkehr nach außen
 - **Mit KI-Integration (optional):** Audit-Prüfpunkte und Findings-Analysen werden an die Claude API gesendet. Dokumente, Reports und die Datenbank verlassen Ihr System nicht.
 
-Die KI-Integration ist vollstaendig optional und kann durch Weglassen der Umgebungsvariable `ENABLE_TEAMMATES=false` deaktiviert werden.
+Die KI-Integration ist vollständig optional und kann durch Weglassen der Umgebungsvariable `ENABLE_TEAMMATES=false` deaktiviert werden.
 
 Hintergrund zum Deployment-Modell und der On-Prem-AI-Boundary: siehe
 [AI Deployment in regulierten Umgebungen](docs/business/ai-deployment-relevance.md).
 
 ## Dokumentation
 
-Die vollstaendige Bedienungsanleitung finden Sie unter:
+Die vollständige Bedienungsanleitung finden Sie unter:
 
 **[Dokumentation](https://silentspike.github.io/complianceos/)**
 
 Inhalt:
 - Schnellstart-Anleitung
 - Bedienung aller Module (Dashboard, Audits, Findings, Chat, Policies, Reports, ...)
-- Referenz (Standards, Glossar, FAQ, Tastaturkuerzel)
+- Referenz (Standards, Glossar, FAQ, Tastaturkürzel)
 
 ### Tiefer einsteigen
 
