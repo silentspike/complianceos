@@ -17,11 +17,33 @@
 
 ---
 
+> **For international reviewers:** ComplianceOS is an on-premise
+> compliance audit platform for regulated organizations and the public
+> sector. It runs entirely on customer infrastructure, with optional
+> Claude AI integration that can be disabled. No telemetry, SQLite
+> storage, EULA-based proprietary license, 90-day evaluation pilots.
+> [Full English Summary →](#english-summary) · [Request evaluation →](#evaluation-anfordern)
+
+---
+
+## Why this matters for AI deployment
+
+Running AI in regulated environments is first an architecture
+question, not a model question. ComplianceOS demonstrates the boundary
+pattern: **on-prem core**, **optional AI integration** (`ENABLE_TEAMMATES=false`
+disables it entirely), **no telemetry**, **local SQLite + document
+storage**, **EULA-based evaluation flow**.
+
+→ Full discussion: [`docs/business/ai-deployment-relevance.md`](docs/business/ai-deployment-relevance.md)
+
 ## Was ist ComplianceOS?
 
-ComplianceOS ist eine On-Premise-Plattform für automatisierte Compliance-Audits gegen internationale Sicherheitsstandards. Die Anwendung läuft vollstaendig auf Ihrer eigenen Infrastruktur — keine Daten verlassen Ihr Netzwerk. Eine optionale KI-Integration (Claude) unterstuetzt bei der Analyse und Beratung.
+ComplianceOS ist eine On-Premise-Plattform für automatisierte Compliance-Audits gegen internationale Sicherheitsstandards. Die Anwendung läuft vollständig auf Ihrer eigenen Infrastruktur — keine Daten verlassen Ihr Netzwerk. Eine optionale KI-Integration (Claude) unterstützt bei der Analyse und Beratung.
 
 ComplianceOS richtet sich an IT-Sicherheitsbeauftragte, Compliance-Manager und CISOs, die ihre Audit-Prozesse strukturieren und automatisieren möchten.
+
+> 📋 **Evaluation anfordern / Request evaluation:** [Issue-Template öffnen](https://github.com/silentspike/complianceos/issues/new?template=evaluation_request.yml)
+> — 90-Tage-Pilot mit vollem Funktionsumfang auf Ihrer Infrastruktur.
 
 > ⚠ **Hinweis zum Repository:** Dieses öffentliche Repository enthält die
 > Dokumentation und Evaluation-Surface. Anwendungs-Source und ausführbare
@@ -48,6 +70,17 @@ Macht den No-Telemetry / On-Prem / Optional-AI-Charakter sofort sichtbar:
 nur ein einziger optionaler Out-Pfad (gestrichelt) verlaesst die Kunden-
 Infrastruktur, alles andere bleibt lokal.
 
+## ROI-Beispiele / ROI scenarios
+
+Walkthrough-style cost-benefit calculations for three regulated-sector
+audit cycles:
+
+- [`examples/roi-iso27001-mid-enterprise.md`](examples/roi-iso27001-mid-enterprise.md) — Mid-Enterprise (200-5000 employees, ISO 27001 first audit)
+- [`examples/roi-nis2-kritis.md`](examples/roi-nis2-kritis.md) — KRITIS-Betreiber unter NIS2 Art. 21
+- [`examples/roi-b3s-hospital.md`](examples/roi-b3s-hospital.md) — Krankenhaus B3S (DSGVO + B3S-Krankenhaus)
+
+Werte sind illustrativ, nicht Vertragsgrundlage / values are illustrative, not contractual.
+
 ## Features
 
 ### 9 Compliance-Standards
@@ -71,8 +104,8 @@ Infrastruktur, alles andere bleibt lokal.
 - **Findings-Management** — Severity-Klassifikation, Status-Workflow, Zuweisung, Deadlines
 - **Remediation-Tracking** — Massnahmen verfolgen, Verantwortliche zuweisen, Fortschritt messen
 - **Policy-Generator** — 6 Vorlagen (Passwort, Backup, Incident, Zugriff, ISMS, Datenschutz)
-- **Drift-Detection** — Regressionen zwischen Audit-Laeufen automatisch erkennen
-- **Cross-Standard-Mapping** — Controls standarduebergreifend zuordnen und Synergien nutzen
+- **Drift-Detection** — Regressionen zwischen Audit-Läufen automatisch erkennen
+- **Cross-Standard-Mapping** — Controls standardübergreifend zuordnen und Synergien nutzen
 - **Executive Dashboard** — Risiko-Matrix, Business Impact, Compliance-Trends
 - **Dokument-Pipeline** — PDF, DOCX, XLSX, Markdown hochladen und analysieren
 - **Multi-Projekt** — Mehrere Organisationen/Projekte parallel verwalten
@@ -91,7 +124,7 @@ ComplianceOS nutzt das **Obsidian Prism** Design System — ein professionelles 
 
 ComplianceOS richtet sich an regulierte Organisationen und den öffentlichen
 Sektor, bei denen Compliance nicht verhandelbar ist und Daten nicht in eine
-fremde Cloud duerfen:
+fremde Cloud dürfen:
 
 - **KRITIS-Betreiber** (Energie, Wasser, Telekommunikation) unter NIS2 / KritisV
 - **Krankenhäuser und Gesundheitsdienstleister** (B3S-Krankenhaus, DSGVO)
@@ -116,25 +149,25 @@ Compliance-Artefakte für das erste Audit-Zyklus.
 ComplianceOS ist eine **On-Premise-Anwendung**:
 
 - Alle Daten werden lokal in SQLite gespeichert
-- Keine Telemetrie, kein Tracking, keine externe Datenuebertragung
-- **Ohne KI-Integration:** Kein Netzwerkverkehr nach aussen
+- Keine Telemetrie, kein Tracking, keine externe Datenübertragung
+- **Ohne KI-Integration:** Kein Netzwerkverkehr nach außen
 - **Mit KI-Integration (optional):** Audit-Prüfpunkte und Findings-Analysen werden an die Claude API gesendet. Dokumente, Reports und die Datenbank verlassen Ihr System nicht.
 
-Die KI-Integration ist vollstaendig optional und kann durch Weglassen der Umgebungsvariable `ENABLE_TEAMMATES=false` deaktiviert werden.
+Die KI-Integration ist vollständig optional und kann durch Weglassen der Umgebungsvariable `ENABLE_TEAMMATES=false` deaktiviert werden.
 
 Hintergrund zum Deployment-Modell und der On-Prem-AI-Boundary: siehe
 [AI Deployment in regulierten Umgebungen](docs/business/ai-deployment-relevance.md).
 
 ## Dokumentation
 
-Die vollstaendige Bedienungsanleitung finden Sie unter:
+Die vollständige Bedienungsanleitung finden Sie unter:
 
 **[Dokumentation](https://silentspike.github.io/complianceos/)**
 
 Inhalt:
 - Schnellstart-Anleitung
 - Bedienung aller Module (Dashboard, Audits, Findings, Chat, Policies, Reports, ...)
-- Referenz (Standards, Glossar, FAQ, Tastaturkuerzel)
+- Referenz (Standards, Glossar, FAQ, Tastaturkürzel)
 
 ### Tiefer einsteigen
 
@@ -192,3 +225,13 @@ This public repository contains documentation and evaluation surface. Applicatio
 
 - Documentation: https://silentspike.github.io/complianceos/
 - Evaluation request: https://github.com/silentspike/complianceos/issues/new?template=evaluation_request.yml
+
+## In context
+
+ComplianceOS is the **trust** pillar in a four-repo stack for
+AI-assisted engineering in regulated environments:
+
+- [mainrag](https://github.com/silentspike/mainrag) — context
+- [noaide](https://github.com/silentspike/noaide) — control
+- [project-sentinel](https://github.com/silentspike/project-sentinel) — runtime
+- **complianceos** — trust (this repo)
