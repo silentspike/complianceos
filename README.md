@@ -225,3 +225,13 @@ This public repository contains documentation and evaluation surface. Applicatio
 
 - Documentation: https://silentspike.github.io/complianceos/
 - Evaluation request: https://github.com/silentspike/complianceos/issues/new?template=evaluation_request.yml
+
+## In context
+
+ComplianceOS is the **trust** pillar in a four-repo stack for
+AI-assisted engineering in regulated environments:
+
+- [mainrag](https://github.com/silentspike/mainrag) — context
+- [noaide](https://github.com/silentspike/noaide) — control
+- [project-sentinel](https://github.com/silentspike/project-sentinel) — runtime
+- **complianceos** — trust (this repo)
