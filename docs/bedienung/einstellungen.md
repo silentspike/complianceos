@@ -2,11 +2,6 @@
 
 Unter Einstellungen verwalten Sie Projekte, Präferenzen, Team-Mitglieder, geplante Audits, Benachrichtigungen und Feature-Flags.
 
-<figure class="screenshot" markdown>
-![Einstellungen](../screenshots/einstellungen/einstellungen-overview.png)
-<figcaption>Einstellungen: Präferenzen, Projekte, Team, Zeitpläne, ntfy-Benachrichtigungen, System-Info und Feature-Flags</figcaption>
-</figure>
-
 ---
 
 ## Präferenzen
