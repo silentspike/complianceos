@@ -56,10 +56,7 @@ Zusätzlich zum Projekt-Pfad können Sie unter **Dokumente** weitere Dateien hoc
    - **Domain**: Prüft nur eine bestimmte Domain (z.B. CRYPTO, ACCESS)
 4. Klicken Sie auf **Audit starten**
 
-<figure class="screenshot" markdown>
-![Audits-Seite](../screenshots/audits/audits-overview.png)
-<figcaption>Audit-Seite mit Startformular und Audit-Verlauf</figcaption>
-</figure>
+
 
 !!! info "Audit-Dauer"
     - **Vollaudit**: 1-5 Minuten (abhängig von Systemkomplexität und KI-Verfügbarkeit)

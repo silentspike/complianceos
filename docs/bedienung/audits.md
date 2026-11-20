@@ -2,10 +2,7 @@
 
 Audits sind der Kern von ComplianceOS. Sie prüfen Ihre Infrastruktur systematisch gegen Compliance-Controls und identifizieren Abweichungen (Findings) nach Schweregrad.
 
-<figure class="screenshot" markdown>
-![Audits Übersicht](../screenshots/audits/audits-overview.png)
-<figcaption>Audit-Seite: Startformular oben, Audit-Verlauf unten mit allen bisherigen Durchläufen</figcaption>
-</figure>
+
 
 ---
 
