@@ -97,3 +97,7 @@ nav:
     - referenz/glossar.md
     - referenz/tastaturkuerzel.md
     - referenz/faq.md
+
+exclude_docs: |
+  /screenshots/audits/audits-overview.png
+  /screenshots/einstellungen/einstellungen-overview.png
